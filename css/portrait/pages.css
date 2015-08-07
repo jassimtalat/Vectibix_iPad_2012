@@ -1,0 +1,106 @@
+
+
+/***********************************************************
+Page/slide: Identifying Localised Neuropathic Pain
+***********************************************************/
+.crowd {
+	width: 60%;	
+	
+	position: absolute;
+	left:66px;
+	top:157px;
+	z-index: 2;
+}
+
+.crowd .interSlide {
+	width: 23px;
+	height: 417px;
+	margin-left: 0;
+	float: left;
+	position: relative;
+	background-image: url(../../graphics/turkCMV/slider.png);
+	background-repeat: no-repeat;
+}
+
+.crowd .interScroll {
+	width: 26px;
+	height: 100px;
+	padding-bottom: 0;
+	margin-left: 2px;
+	float: left;
+	position: relative;
+	background-color: transparent;
+	background-image: url(../../graphics/turkCMV/scroller.png);
+	background-repeat: no-repeat;
+
+	-webkit-transition-property: -webkit-transform, top;
+    -webkit-transition-duration: 1ms;
+}
+
+
+.crowd .result {
+	width: 245px;	
+	position: absolute;
+	top: 173px;
+	left:435px;			
+}
+
+ul.people {
+	width: 350px;
+	padding: 0 0 0 20px;
+	float: left;
+}
+
+.people li {
+	width: 35px;
+	height: 38px;
+	margin: 0 0 4px 0;
+	float: left;
+	background-image: url(../../graphics/turkCMV/person-sprite.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	list-style-type: none;
+}
+
+.people li.selected {
+	background-position: 0 -38px;
+}
+
+.people li.difference {
+	background-position: 0 -76px;
+}
+
+.people li span {
+	display: none;
+}
+
+a.result{
+	position:relative;
+}
+
+a.result span.gradient {
+	position:absolute;
+	display:block;
+	height:60px;
+	width: 70px;
+	background:url('../../graphics/turkCMV/gradient-white.png') repeat-x;
+	/*background:-webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, rgb(99,157,36)),
+		color-stop(1, rgb(157,199,106))
+	)*/
+		
+}
+
+#peopleResult{
+	position:absolute;
+	z-index:50;
+	font-size:60px;
+	font-weight:bold;
+	color: #9bc667;
+	text-shadow: -1px -1px #87a75f, 1px 1px #87a75f,1px -1px #87a75f, -1px 1px #87a75f;
+}
+
+

@@ -1,0 +1,552 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<title>Vectibix</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="description" content="Presentation" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=5.0;" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+
+<!--STYLESHEETS-->
+<link rel="stylesheet" type="text/css" href="css/general.css" />
+<link rel="stylesheet" type="text/css" href="css/typography.css" />
+<link rel="stylesheet" href="css/reveal.css">
+<link rel="stylesheet" type="text/css" href="css/portrait.css" />
+<link rel="stylesheet" type="text/css" href="css/docGallery.css" />
+<link rel="stylesheet" type="text/css" href="css/slider.css" />
+<link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+
+<!--SCRIPTS-->
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<script type="text/javascript" src="scripts/doclick.js"></script>	
+<script type="text/javascript" src="scripts/iscroll.js"></script>
+<script type="text/javascript" src="../viewer/js/pdf.js"></script>
+<script type="text/javascript" src="../../viewer/js/monitor.js"></script>
+<script type="text/javascript" src="scripts/webkitdragdrop.js"></script>
+<script type="text/javascript" src="scripts/docGallery.js"></script>	
+<script type="text/javascript" src="scripts/scripts.js"></script>
+<script type="text/javascript" src="scripts/jquery.reveal.js"></script>	
+<script type="text/javascript" src="scripts/jquery.cycle.all.js"></script>
+<script type="text/javascript" src="scripts/graphs.js"></script>
+<script type="text/javascript" src="scripts/slider.js"></script>
+
+<script type="text/javascript"> 
+$(document).ready(function(){
+$(".flip").click(function(){
+$(".thumbnailContainer").slideToggle("slow");});});
+</script>
+<script>
+$(document).ready(function(){
+//Examples of how to assign the ColorBox event to elements
+$(".pop_scroll").fancybox({
+	'width'				: 890,
+	'height'			: 690,
+	'autoScale'			: false,
+	'transitionIn'		: 'none',
+	'transitionOut'		: 'none',
+	'overlayOpacity' 	: '0',
+	'type'				: 'iframe'
+});
+
+$(".star").fancybox({
+	'width'				: 690,
+	'height'			: 490,
+	'autoScale'			: false,
+	'transitionIn'		: 'none',
+	'transitionOut'		: 'none',
+	'overlayOpacity' 	: '0',
+	'type'				: 'iframe'
+});
+//Example of preserving a JavaScript event for inline calls.
+});
+</script>
+</head>
+<body>
+<div id="container">
+<div id="site">
+<section class="slider">
+<div class="homecontainer">
+<div class="home">
+<a href="Javascript:void(0);" onClick="showSlideByIndex(0, this.parentNode);">
+<div class="homes_button"></div>
+</a>
+</div>
+</div>
+<nav class="mainNavigation" role="navigation">
+<ul id="mainNavigation" class="navigation primary">		
+<li><a style="text-align: right; padding-right:40px" href="#" ontouchstart="openPDF('pdf/9.pdf');">SmPC</a></li>                    
+<li><a class="pop_scroll" href="aa.html">Referenties</a></li>                    
+<li><a class="star" href="star.html" style="width:50px; font-size:40px;">*</a></li>
+<li style="width:0px;"><a id="home"></a></li>
+<li><a href="Javascript:void(0);" onClick="showSlideByIndex(1, this.parentNode);">CT respons</a></li>
+<li><a href="Javascript:void(0);" onClick="showSlideByIndex(2, this.parentNode);">OR/SZ</a></li>
+<li><a href="Javascript:void(0);" onClick="showSlideByIndex(3, this.parentNode);">PFS</a></li>
+<li><a href="Javascript:void(0);" onClick="showSlideByIndex(4, this.parentNode);">QoL</a></li>
+<li><a href="Javascript:void(0);" onClick="showSlideByIndex(5, this.parentNode);">Toediening</a></li>
+<li><a href="Javascript:void(0);" onClick="showSlideByIndex(6, this.parentNode);">Support</a></li>					
+</ul>
+</nav>
+<article id="main" role="main">
+<!--<section id="Start" class="">
+</section>-->
+
+<!-- Tab lantus -->
+
+<section id="turkCMV">
+
+<div id="myModaltop" class="reveal-modal">
+<ul>
+<li>a.	Geselecteerde data uit beschikbare fase 3 studies naar tweede en derdelijnsschema's met chemotherapie bij mCRC<sup>4-8</sup></li>
+<li>b.	Bij patiënten met <i style="color:#000; font-size:16px;">KRAS</i> wild-type mCRC na falen van fluoropyrimidine, oxaliplatinen irinotecan-bevattende chemotherapieregimes<sup>9</sup></li>
+<li>c.	Kaplan-Meier curve van progressievrije overleving bij Vectibix<sup>&reg;</sup> patiënten met wild-type <i style="color:#000; font-size:16px;">KRAS</i> mCRC (n=124), die een objectieve respons of stabiele ziekte toonden, versus patiënten met ziekteprogressie als beste respons<sup>10,11</sup></li>
+<li>d.	Patiënten met wild-type <i style="color:#000; font-size:16px;">KRAS</i> mCRC, behandeld met Vectibix<sup>&reg;</sup> laten een significante verlichting van symptomen zien t.o.v. patiënten met wildtype <i style="color:#000; font-size:16px;">KRAS</i> mCRC behandeld met BSC alleen.<sup>13</sup> Gemeten met vragenlijst FACT/NCCN CRC symptom index – FSCI</li>
+<li>e.	Raadpleeg voor informatie over bijwerkingen de samenvatting van productkenmerken<sup>9</sup></li>
+</ul>
+<a class="close-reveal-modal">&#215;</a>
+</div>
+<div class="slides" id="mainSlides" >
+<div class="fullView scroller">
+<div class="slideContainer">                                
+<div class="slide p1" data-monitoring-id="turkCMV" data-monitoring-name="Türkiye'de CMV Sıklığı">
+<div class="basic">
+<h1>Wanneer wilt u weten of de tumor bij uw <br>
+patiënt met mCRC wild-type KRAS is?</h1>
+<h3>(Bij ongeveer 60% van de patiënten met mCRC is de tumor wild-type KRAS) <sup>1, 2, 3</sup></h3>
+<div id="myslide">
+<div style="top:0px;left:795px" id="sld" class="mystuff"><img src="images/head-slider.png" width="127" height="253"></div>
+</div>  <!-- end of div myslide -->
+
+<div class="clear"></div>
+<div id="homepageruler"></div>
+<div id="homepagetextarea">
+<p>oxaliplatin <br>
++ 5-FU bevattende<br>
+chemotherapie<br>
+± bevacizumab</p>
+<p>irinotecan <br>
+bevattende<br>
+chemotherapie</p>
+<p>Vectibix<sup>&reg;</sup>  (EGFR inhibitor)</p>
+<p class="right">alleen Best<br> 
+Supportive <br>
+Care</p>
+</div>
+<div id="homepagebottomline">Voorbeeld van een behandelplan</div>
+</div>
+</div>
+<div class="slide p2" data-monitoring-id="valcyte_logo" data-monitoring-name="Valcyte">
+<div class="basic">
+<div class="page2face"></div>
+<div class="amgenleft"></div>  
+<div class="r2"><a class="pop_scroll" href="aa.html">R</a></div>
+<div class="ra2"><a class="star" href="star.html">*</a></div>
+<div id="myModal" class="reveal-modal">
+<ul>
+<li>a.	Geselecteerde data uit beschikbare fase 3 studies naar tweede en derdelijnsschema's met chemotherapie bij mCRC<sup>4-8</sup></li>
+<li>b.	Bij patiënten met <i style="color:#000; font-size:16px;">KRAS</i> wild-type mCRC na falen van fluoropyrimidine, oxaliplatinen irinotecan-bevattende chemotherapieregimes<sup>9</sup></li>
+<li>c.	Kaplan-Meier curve van progressievrije overleving bij Vectibix<sup>&reg;</sup> patiënten met wild-type <i style="color:#000; font-size:16px;">KRAS</i> mCRC (n=124), die een objectieve respons of stabiele ziekte toonden, versus patiënten met ziekteprogressie als beste respons<sup>10,11</sup></li>
+<li>d.	Patiënten met wild-type <i style="color:#000; font-size:16px;">KRAS</i> mCRC, behandeld met Vectibix<sup>&reg;</sup> laten een significante verlichting van symptomen zien t.o.v. patiënten met wildtype <i style="color:#000; font-size:16px;">KRAS</i> mCRC behandeld met BSC alleen.<sup>13</sup> Gemeten met vragenlijst FACT/NCCN CRC symptom index – FSCI</li>
+<li>e.	Raadpleeg voor informatie over bijwerkingen de samenvatting van productkenmerken<sup>9</sup></li>
+</ul>
+<a class="close-reveal-modal">&#215;</a>
+</div>
+
+<div class="page2heading">U ziet de responspercentages van <br>
+chemotherapie afnemen...</div>
+<div class="grapharea">
+<div class="graphbg">
+<img src="images/page2-graphbg.png" width="590" height="431">
+<div id="r5l1"><img src="images/page2/page2-silverbars.png" width="272" height="338"></div>
+<div id="r5l2"><img src="images/page2/page2-golden.png" width="158" height="338"></div>
+<div id="r5s2"><img src="images/page2/page2-goldenbox.png" width="158" height="338"></div>
+<div id="r5l1_show" ></div>
+<div id="r5l2_show" ></div>
+</div>
+</div>
+<div class="subheading">Bewerkt naar: Tournigand C. 2004; Giantonio BJ. 2007; Sobrero AF. 2008; Koopman M. 2007; Chen HX. 2006. <sup>4-8</sup></div>
+<div class="whiteareapage2">
+<span>•</span> De kans op een objectieve respons bij mCRC patiënten neemt af<br>
+ in de loop van de behandeling <sup>a, 4-8</sup>
+</div>
+</div>
+</div>
+<div class="slide p3" data-monitoring-id="valcyte_logo" data-monitoring-name="Valcyte">
+<div class="basic">
+<div class="page3face"></div>
+<div class="amgenright"></div>
+<div class="vectibix" ontouchstart="openPDF('pdf/9.pdf');"></div>  
+<div class="r2"><a class="pop_scroll" href="aa.html">R</a></div>
+<div class="ra2"><a class="star" href="star.html">*</a></div>
+<div id="myModal2" class="reveal-modal">
+<ul>
+<li>a.	Geselecteerde data uit beschikbare fase 3 studies naar tweede en derdelijnsschema's met chemotherapie bij mCRC<sup>4-8</sup></li>
+<li>b.	Bij patiënten met <i style="color:#000; font-size:16px;">KRAS</i> wild-type mCRC na falen van fluoropyrimidine, oxaliplatinen irinotecan-bevattende chemotherapieregimes<sup>9</sup></li>
+<li>c.	Kaplan-Meier curve van progressievrije overleving bij Vectibix<sup>&reg;</sup> patiënten met wild-type <i style="color:#000; font-size:16px;">KRAS</i> mCRC (n=124), die een objectieve respons of stabiele ziekte toonden, versus patiënten met ziekteprogressie als beste respons<sup>10,11</sup></li>
+<li>d.	Patiënten met wild-type <i style="color:#000; font-size:16px;">KRAS</i> mCRC, behandeld met Vectibix<sup>&reg;</sup> laten een significante verlichting van symptomen zien t.o.v. patiënten met wildtype <i style="color:#000; font-size:16px;">KRAS</i> mCRC behandeld met BSC alleen.<sup>13</sup> Gemeten met vragenlijst FACT/NCCN CRC symptom index – FSCI</li>
+<li>e.	Raadpleeg voor informatie over bijwerkingen de samenvatting van productkenmerken<sup>9</sup></li>
+</ul>
+<a class="close-reveal-modal">&#215;</a>
+</div>                                          
+
+<div class="page2heading">U kent de therapeutische waarde<br> 
+van Vectibix<sup>&reg; b, 1, 9</sup> </div>
+<div class="grapharea">
+<div class="graphbg">
+<img src="images/page3/page3-graphbg.png" width="590" height="431">
+<div id="r7l1"><img src="images/page3/page3-silver0.png"></div>
+<div id="r7l2"><img src="images/page3/page3-gold1.png"></div>
+<div id="r7l3"><img src="images/page3/page3-gold2.png"></div>
+<div id="r7l4"><img src="images/page3/page3-silvergold2.png"></div>
+<div id="r7s1"><img src="images/page3/page3-fac4.png"></div>
+<div id="r7l1_show" ></div>
+<div id="r7l2_show" ></div>
+<div id="r7l3_show" ></div>
+<div id="r7l4_show" ></div>
+</div>
+</div>
+<div class="subheading">Bewerkt naar Amado RG. 2008.<sup>1</sup></div>
+<div class="subheading2">* BSC = Best Supportive Care</div>
+<div class="whiteareapage3-1">
+<img src="images/page6_peel.png" width="573" height="113" />
+<img src="images/blank.gif" width="573" height="113" />
+</div>
+<div class="subheading3">b  Bij patiënten met wild-type KRAS mCRC na falen van fluoropyrimidine, oxaliplatinen irinotecan-bevattende chemotherapieregimes <sup>9</sup></div>
+</div>
+</div>  
+<div class="slide p4" data-monitoring-id="valcyte_logo" data-monitoring-name="Valcyte">
+<div class="basic">
+<div class="page4face"></div>
+<div class="amgenleft"></div>
+<div class="vectibixleft" ontouchstart="openPDF('pdf/9.pdf');"></div>  
+<div class="r2"><a class="pop_scroll" href="aa.html">R</a></div>
+<div class="ra2"><a class="star" href="star.html">*</a></div>
+<div id="myModal3" class="reveal-modal">
+<ul>
+<li>a.	Geselecteerde data uit beschikbare fase 3 studies naar tweede en derdelijnsschema's met chemotherapie bij mCRC<sup>4-8</sup></li>
+<li>b.	Bij patiënten met <i style="color:#000; font-size:16px;">KRAS</i> wild-type mCRC na falen van fluoropyrimidine, oxaliplatinen irinotecan-bevattende chemotherapieregimes<sup>9</sup></li>
+<li>c.	Kaplan-Meier curve van progressievrije overleving bij Vectibix<sup>&reg;</sup> patiënten met wild-type <i style="color:#000; font-size:16px;">KRAS</i> mCRC (n=124), die een objectieve respons of stabiele ziekte toonden, versus patiënten met ziekteprogressie als beste respons<sup>10,11</sup></li>
+<li>d.	Patiënten met wild-type <i style="color:#000; font-size:16px;">KRAS</i> mCRC, behandeld met Vectibix<sup>&reg;</sup> laten een significante verlichting van symptomen zien t.o.v. patiënten met wildtype <i style="color:#000; font-size:16px;">KRAS</i> mCRC behandeld met BSC alleen.<sup>13</sup> Gemeten met vragenlijst FACT/NCCN CRC symptom index – FSCI</li>
+<li>e.	Raadpleeg voor informatie over bijwerkingen de samenvatting van productkenmerken<sup>9</sup></li>
+</ul>
+<a class="close-reveal-modal">&#215;</a>
+</div>
+
+<div class="page2heading">U wilt een therapie die zich in een<br>
+maandenlange PFS kan vertalen...<sup>10, 11</sup></div>
+
+
+<div class="grapharea">
+  <div class="graphbg">
+    <img src="images/page4/page4-graphbg.png" width="590" height="431">
+    <div id="r4l1"><img src="images/page4new/p4-1.1.png"></div>
+    <div id="r4l2"><img src="images/page4new/p4-2.1.png"></div>
+    
+    <div id="r4l3"><img src="images/page4new/p4-1.2.png"></div>
+    <div id="r4l4"><img src="images/page4new/p4-2.2.png"></div>
+    
+    <div id="r4l1_show" ></div>
+    <div id="r4l2_show" ></div>
+    <div id="r4l10_show" ></div> <!--red-->
+    <div id="r4l20_show" ></div> <!--green-->
+  </div>
+
+</div>
+
+
+<div class="subheading">Bewerkt naar Siena S. 2009. <sup>11</sup></div>
+<div class="whiteareapage3-2">
+<img src="images/page6_peel3.png" width="573" height="113" />
+<img src="images/blank.gif" width="573" height="113" />
+</div>
+<div class="subheading3">b  Bij patiënten met wild-type KRAS mCRC na falen van fluoropyrimidine, oxaliplatinen irinotecan-bevattende chemotherapieregimes <sup>9</sup></div>
+</div>
+</div>  
+<div class="slide p5" data-monitoring-id="valcyte_logo" data-monitoring-name="Valcyte">
+<div class="basic">
+<div class="page5face"></div>
+<div class="amgenright"></div>
+<div class="vectibix" ontouchstart="openPDF('pdf/9.pdf');"></div>    
+<div class="r2"><a class="pop_scroll" href="aa.html">R</a></div>
+<div class="ra2"><a class="star" href="star.html">*</a></div>
+<div id="myModal4" class="reveal-modal">
+<ul>
+<li>a.	Geselecteerde data uit beschikbare fase 3 studies naar tweede en derdelijnsschema's met chemotherapie bij mCRC<sup>4-8</sup></li>
+<li>b.	Bij patiënten met <i style="color:#000; font-size:16px;">KRAS</i> wild-type mCRC na falen van fluoropyrimidine, oxaliplatinen irinotecan-bevattende chemotherapieregimes<sup>9</sup></li>
+<li>c.	Kaplan-Meier curve van progressievrije overleving bij Vectibix<sup>&reg;</sup> patiënten met wild-type <i style="color:#000; font-size:16px;">KRAS</i> mCRC (n=124), die een objectieve respons of stabiele ziekte toonden, versus patiënten met ziekteprogressie als beste respons<sup>10,11</sup></li>
+<li>d.	Patiënten met wild-type <i style="color:#000; font-size:16px;">KRAS</i> mCRC, behandeld met Vectibix<sup>&reg;</sup> laten een significante verlichting van symptomen zien t.o.v. patiënten met wildtype <i style="color:#000; font-size:16px;">KRAS</i> mCRC behandeld met BSC alleen.<sup>13</sup> Gemeten met vragenlijst FACT/NCCN CRC symptom index – FSCI</li>
+<li>e.	Raadpleeg voor informatie over bijwerkingen de samenvatting van productkenmerken<sup>9</sup></li>
+</ul>
+<a class="close-reveal-modal">&#215;</a>
+</div>
+
+<div class="page2heading">U wilt effectiviteit,<br>
+maar niet tot elke prijs...</div>
+
+<div class="grapharea">
+<div class="graphbg">
+<img src="images/page5/page5-graphbg.png" width="590" height="431">
+<div class="page5graph-1">
+<img src="images/blank.gif" width="450" height="252" />
+<img src="images/page5/page5-6.png" width="450" height="252" />
+<img src="images/page5/page5-5.png" width="450" height="252" />
+</div>
+</div>
+</div>
+<div class="subheading">Amado RG. 2008. <sup>13</sup></div>
+<div class="whiteareapage3-3">
+<img src="images/page6_peel.png" width="573" height="113" />
+<img src="images/blank.gif" width="573" height="113" />
+</div>
+<div class="subheading3">b  Bij patiënten met wild-type KRAS mCRC na falen van fluoropyrimidine, oxaliplatinen irinotecan-bevattende chemotherapieregimes <sup>9</sup></div>
+</div>
+</div>                                                                                                        
+<div class="slide p6" data-monitoring-id="valcyte_logo" data-monitoring-name="Valcyte">
+<div class="basic">
+<div class="page6face"></div>
+<div class="amgenleft"></div>
+<div class="vectibixleft" ontouchstart="openPDF('pdf/9.pdf');"></div>  
+<div class="r2"><a class="pop_scroll" href="aa.html">R</a></div>
+<div class="ra2"><a class="star" href="star.html">*</a></div>
+<div id="myModal5" class="reveal-modal">
+<ul>
+<li>a.	Geselecteerde data uit beschikbare fase 3 studies naar tweede en derdelijnsschema's met chemotherapie bij mCRC<sup>4-8</sup></li>
+<li>b.	Bij patiënten met <i style="color:#000; font-size:16px;">KRAS</i> wild-type mCRC na falen van fluoropyrimidine, oxaliplatinen irinotecan-bevattende chemotherapieregimes<sup>9</sup></li>
+<li>c.	Kaplan-Meier curve van progressievrije overleving bij Vectibix<sup>&reg;</sup> patiënten met wild-type <i style="color:#000; font-size:16px;">KRAS</i> mCRC (n=124), die een objectieve respons of stabiele ziekte toonden, versus patiënten met ziekteprogressie als beste respons<sup>10,11</sup></li>
+<li>d.	Patiënten met wild-type <i style="color:#000; font-size:16px;">KRAS</i> mCRC, behandeld met Vectibix<sup>&reg;</sup> laten een significante verlichting van symptomen zien t.o.v. patiënten met wildtype <i style="color:#000; font-size:16px;">KRAS</i> mCRC behandeld met BSC alleen.<sup>13</sup> Gemeten met vragenlijst FACT/NCCN CRC symptom index – FSCI</li>
+<li>e.	Raadpleeg voor informatie over bijwerkingen de samenvatting van productkenmerken<sup>9</sup></li>
+</ul>
+<a class="close-reveal-modal">&#215;</a>
+</div>
+
+<div class="page2heading">U gunt uw patiënt zoveel <br>
+mogelijk tijd thuis...</div>
+<div class="whiteareapage4-1">
+<img src="images/page6_peel2.png" width="573" height="113" />
+<img src="images/blank.gif" width="573" height="113" />
+</div>
+<div class="page6imagearea">
+<img src="images/blank.gif" width="590" height="431">
+<img src="images/pag6-pic.png" width="590" height="431" alt="toediening">
+</div>
+<div class="page6imagearea2">
+<img src="images/blank.gif" width="590" height="431">
+<img src="images/pag6-pic2.png" width="590" height="431" alt="toediening">
+</div>
+</div>
+</div>
+<div class="slide p7" data-monitoring-id="valcyte_logo" data-monitoring-name="Valcyte">
+<div class="basic">
+<div class="page7face"></div>
+<div class="amgenright"></div>
+<div class="vectibix" ontouchstart="openPDF('pdf/9.pdf');"></div>    
+<div class="r2"><a class="pop_scroll" href="aa.html">R</a></div>
+<div class="ra2"><a class="star" href="star.html">*</a></div>
+<div id="myModal6" class="reveal-modal">
+<ul>
+<li>a.	Geselecteerde data uit beschikbare fase 3 studies naar tweede en derdelijnsschema's met chemotherapie bij mCRC<sup>4-8</sup></li>
+<li>b.	Bij patiënten met <i style="color:#000; font-size:16px;">KRAS</i> wild-type mCRC na falen van fluoropyrimidine, oxaliplatinen irinotecan-bevattende chemotherapieregimes<sup>9</sup></li>
+<li>c.	Kaplan-Meier curve van progressievrije overleving bij Vectibix<sup>&reg;</sup> patiënten met wild-type <i style="color:#000; font-size:16px;">KRAS</i> mCRC (n=124), die een objectieve respons of stabiele ziekte toonden, versus patiënten met ziekteprogressie als beste respons<sup>10,11</sup></li>
+<li>d.	Patiënten met wild-type <i style="color:#000; font-size:16px;">KRAS</i> mCRC, behandeld met Vectibix<sup>&reg;</sup> laten een significante verlichting van symptomen zien t.o.v. patiënten met wildtype <i style="color:#000; font-size:16px;">KRAS</i> mCRC behandeld met BSC alleen.<sup>13</sup> Gemeten met vragenlijst FACT/NCCN CRC symptom index – FSCI</li>
+<li>e.	Raadpleeg voor informatie over bijwerkingen de samenvatting van productkenmerken<sup>9</sup></li>
+</ul>
+<a class="close-reveal-modal">&#215;</a>
+</div>
+
+<div class="page2heading">U bent niet de enige<br> die Vectibix<sup>&reg;</sup> waardeert...</div>
+<div class="whiteareapage4-2">
+<img src="images/page6_peel2.png" width="573" height="113" />
+<img src="images/blank.gif" width="573" height="113" />
+</div>
+<div class="page7imagearea">
+<img src="images/blank.gif" width="590" height="431">
+<img src="images/medicinepg7.png" width="590" height="431" alt="toediening">
+</div>
+</div>
+</div>   
+<div class="slide p8" data-monitoring-id="valcyte_logo" data-monitoring-name="Valcyte">
+<div class="basic">
+<div class="page8face"></div>
+<div class="amgenleft"></div>
+<div class="vectibixleft" ontouchstart="openPDF('pdf/9.pdf');"></div>  
+<div class="r2"><a class="pop_scroll" href="aa.html">R</a></div>
+<div class="ra2"><a class="star" href="star.html">*</a></div>
+<div id="myModal7" class="reveal-modal">
+<ul>
+<li>a.	Geselecteerde data uit beschikbare fase 3 studies naar tweede en derdelijnsschema's met chemotherapie bij mCRC<sup>4-8</sup></li>
+<li>b.	Bij patiënten met <i style="color:#000; font-size:16px;">KRAS</i> wild-type mCRC na falen van fluoropyrimidine, oxaliplatinen irinotecan-bevattende chemotherapieregimes<sup>9</sup></li>
+<li>c.	Kaplan-Meier curve van progressievrije overleving bij Vectibix<sup>&reg;</sup> patiënten met wild-type <i style="color:#000; font-size:16px;">KRAS</i> mCRC (n=124), die een objectieve respons of stabiele ziekte toonden, versus patiënten met ziekteprogressie als beste respons<sup>10,11</sup></li>
+<li>d.	Patiënten met wild-type <i style="color:#000; font-size:16px;">KRAS</i> mCRC, behandeld met Vectibix<sup>&reg;</sup> laten een significante verlichting van symptomen zien t.o.v. patiënten met wildtype <i style="color:#000; font-size:16px;">KRAS</i> mCRC behandeld met BSC alleen.<sup>13</sup> Gemeten met vragenlijst FACT/NCCN CRC symptom index – FSCI</li>
+<li>e.	Raadpleeg voor informatie over bijwerkingen de samenvatting van productkenmerken<sup>9</sup></li>
+</ul>
+<a class="close-reveal-modal">&#215;</a>
+</div>
+
+<div class="page2heading">...ook om het hanteerbaar <br>
+bijwerkingenpatroon <sup>e, 9,17,18</sup></div>
+<div class="page8imagearea">
+<h4>Incidentie van huidgerelateerde bijwerking, diarree en infusiereacties in klinische studies <br>
+met Vectibix<sup>&reg;</sup> monotherapie (n=920)  <sup>9, 17</sup></h4>
+<img src="images/page8-tableboxtext.png" width="469" height="187" alt="Table Box">
+</div>
+<div class="whiteareapage3-4">
+<img src="images/page6_peel3.png" width="573" height="113" />
+<img src="images/blank.gif" width="573" height="113" />
+</div>
+</div>
+</div>  
+<div class="slide p1" data-monitoring-id="turkCMV" data-monitoring-name="Türkiye'de CMV Sıklığı">
+<div class="basic">
+<h1>Wanneer wilt u weten of de tumor bij uw <br>
+patiënt met mCRC wild-type KRAS is?</h1>
+<h3>(Bij ongeveer 60% van de patiënten met mCRC is de tumor wild-type KRAS) 1, 2, 3</h3>
+<div id="myslidel">
+<div style="top:0px;left:795px" id="sld1" class="mystuffl"><img src="images/head-slider.png" width="127" height="253"></div>
+</div>  <!-- end of div myslide -->
+
+<div class="clear"></div>
+<div id="homepageruler">
+</div>
+<div id="homepagetextarea">
+<p>oxaliplatin <br>
++ 5-FU bevattende<br>
+chemotherapie<br>
+± bevacizumab</p>
+<p>irinotecan <br>
+bevattende<br>
+chemotherapie</p>
+<p>Vectibix<sup>&reg;</sup>  (EGFR inhibitor)</p>
+<p class="right">alleen Best<br> 
+Supportive <br>
+Care</p>
+</div>
+<div id="homepagebottomline">Voorbeeld van een behandelplan</div>
+</div>
+</div> 
+    <div class="slide p1" data-monitoring-id="turkCMV" data-monitoring-name="Türkiye'de CMV Sıklığı">
+    <div class="basic">
+    <h1>Wanneer wilt u weten of de tumor bij uw <br>
+    patiënt met mCRC wild-type KRAS is?</h1>
+
+    <h3>(Bij ongeveer 60% van de patiënten met mCRC is de tumor wild-type KRAS) 1, 2, 3</h3>
+
+    <div id="myslide">
+    
+    <div style="top:0px;left:795px" id="sld2" class="mystuff"><img src="images/head-slider.png" width="127" height="253"></div>
+    
+    </div>  <!-- end of div myslide -->
+    
+    <div class="clear"></div>
+    <div id="homepageruler">
+    </div>
+
+    <div id="homepagetextarea">
+    <p>oxaliplatin <br>
+    + 5-FU bevattende<br>
+    chemotherapie<br>
+    ± bevacizumab</p>
+
+    <p>irinotecan <br>
+    bevattende<br>
+    chemotherapie</p>
+
+    <p>Vectibix<sup>&reg;</sup>  (EGFR inhibitor)</p>
+
+    <p class="right">alleen Best<br> 
+    Supportive <br>
+    Care</p>
+
+    </div>
+
+    <div id="homepagebottomline">Voorbeeld van een behandelplan</div>
+
+    </div>
+    </div>                                                                                                 
+                                  	                                                                                                
+</div>
+</div>
+<div class="thumbnailContainer">
+<ul class="thumbnails scroller">
+<li>
+<a href="#" class="selected" id="link_0">
+<img src="images/thumbs/1.jpg" alt="" />
+</a>
+</li>
+<li>
+<a href="#" id="link_1">
+<img src="images/thumbs/2.jpg" alt="" />
+</a>
+</li>
+<li>
+<a href="#" id="link_2">
+<img src="images/thumbs/3.jpg" alt="" />
+</a>
+</li>
+<li>
+<a href="#" id="link_3">
+<img src="images/thumbs/4.jpg" alt="" />
+</a>
+</li>
+<li>
+<a href="#" id="link_4">
+<img src="images/thumbs/5.jpg" alt="" />
+</a>
+</li>
+<li>
+<a href="#" id="link_5">
+<img src="images/thumbs/6.jpg" alt="" />
+</a>
+</li>
+<li>
+<a href="#" id="link_6">
+<img src="images/thumbs/7.jpg" alt="" />
+</a>
+</li>
+<li>
+<a href="#" id="link_7">
+<img src="images/thumbs/8.jpg" alt="" />
+</a>
+</li>
+<li>
+<a href="#" id="link_8">
+<img src="images/thumbs/11.jpg" alt="" />
+</a>
+</li>
+</ul>
+<div class="rcorner"></div>
+</div>
+<p class="flip"></p>
+</div>
+</section>
+<section id="etki">
+<div id="etki_anim">
+</div>
+</section>
+</article>
+</section>
+</div>
+</div>
+<script type="text/javascript">
+docGallery.attach( '.doc-gallery-trigger' );
+</script>
+<script type="text/javascript">		
+function pos(){
+	var lt = $("#sld").css('left');
+//	alert(lt);
+	$("#sld2").css('left',lt);
+	//alert("sld2 css "+lt);
+	}
+	function pos2(){
+	var lt = $("#sld2").css('left');
+//	alert(lt);
+	$("#sld").css('left',lt);
+	//alert("sld2 css "+lt);
+	}
+		var r = new webkit_draggable('sld',{onEnd : pos});
+		var r1 = new webkit_draggable('sld1');
+		var r2 = new webkit_draggable('sld2',{onEnd : pos2});
+		
+		</script>
+</body>
+</html>

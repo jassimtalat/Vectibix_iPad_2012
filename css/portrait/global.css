@@ -1,0 +1,250 @@
+/*
+General style definitions (applicapable to entire site while in portrait mode).
+
+Site: Agnitio iPad Presentation Framework
+Author: Adam Barry
+Date: 12 November 2010
+Base by Adam Barry
+----------------------------------------------------------*/
+
+/***********************************************************
+Global Layout definition
+***********************************************************/
+#container { /* Container responsible for centering #site */
+	width: 1024px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+#site { /* Global iPad portrait container. Floated to enable Liquid layout */
+	width: 1024px;
+	height: 768px;
+	float: left;
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	background:url(../../images/main-bg.jpg) no-repeat top left;
+	color: inherit;
+}
+
+/*: Slider
+----------------------------------------------------------*/
+.slider {
+	width: 100%;
+	height: 768px;/*983px;*/
+	float: left;
+	position: absolute;
+	bottom: 0px;		/* Place above massive part of footer */
+	left: 0;
+	z-index: 1;
+	overflow: hidden;
+}
+
+
+/*: Navigation: Primary
+----------------------------------------------------------*/
+nav.mainNavigation {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+	position: relative;
+	z-index: 2;
+	-webkit-transform: translate3d(0,0,0);
+	-webkit-backface-visibility: hidden;
+	background:url(../../images/menu-bg.png) no-repeat;
+	
+	
+}
+
+.primary {
+	width: 1391px;
+	height: 44px;
+	float: left;
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 3;
+	background-color: transparent;
+	color: inherit;
+	list-style-type: none;
+	white-space: nowrap;
+}
+
+.primary.left {
+	left: 0;
+}
+
+.primary li {
+	margin-left: 0px;
+	margin-right: 0px;
+	height:50px;
+	border-right:1px solid #666;
+	float: left;
+	position: relative;
+
+	-webkit-transform: translate3d(0,0,0);
+	-webkit-backface-visibility: hidden;
+}
+
+
+
+.primary a {
+	width: 138px;
+    height: 35px;    /* Full height 46px minus padding-top and padding-bottom */
+    padding-top: 15px;
+    padding-left: 11px;
+    padding-right: 11px;
+	float: left;
+	position: relative;
+	z-index: 4;
+	text-align: center;
+
+}
+
+/*.primary a.selected span, .primary a:active span {
+	background-color: transparent;
+	color: #004b84;
+}*/
+
+.primary li.selected a {
+	color:#ffc000;
+
+}
+
+.primary li:first-child.selected a {
+
+}
+
+.primary a, .primary a span {
+	background-color: transparent;
+    font-weight: bold;
+	font-size: 18px;
+    font-family: 'RotisSemiSans';
+	color: #fff;
+    text-shadow:1px 1px 0 #7bac44;
+	white-space: normal;
+}
+
+.primary li.selected a span {
+	background-color: transparent;
+	color: #004b84;
+}
+
+/*: Navigation: special
+----------------------------------------------------------*/
+.primary li.home a {
+	width:63px;
+    padding: 0; height: 50px;
+	/*-webkit-box-shadow: #362a7e 0px -10px 10px -10px inset;
+	-moz-box-shadow: #362a7e 0px -10px 10px -10px inset;
+	box-shadow: #362a7e 0px -10px 10px -10px inset;*/
+
+}
+.home  .homes_button{background: url(../../images/home.png) 0 0 no-repeat;  width: 63px; height: 44px;}
+.selected .homes_button{ background-position:  0 -50px }
+
+/*.primary li.turkCMV a{
+	background: url('../../graphics/menu/turkCMV.png');	
+	width:153px;
+	-webkit-box-shadow: #362a7e 0px -10px 10px -10px inset;
+	-moz-box-shadow: #362a7e 0px -10px 10px -10px inset;
+	box-shadow: #362a7e 0px -10px 10px -10px inset;
+}
+
+.primary li.etki a{
+	background: url('../../graphics/menu/etki.png');
+	width:156px;
+	-webkit-box-shadow: #362a7e 0px -10px 10px -10px inset;
+	-moz-box-shadow: #362a7e 0px -10px 10px -10px inset;
+	box-shadow: #362a7e 0px -10px 10px -10px inset;
+}
+
+.primary li.endika a{
+	background: url('../../graphics/menu/endika.png');	
+	width:153px;
+	-webkit-box-shadow: #362a7e 0px -10px 10px -10px inset;
+	-moz-box-shadow: #362a7e 0px -10px 10px -10px inset;
+	box-shadow: #362a7e 0px -10px 10px -10px inset;
+}
+.primary li.CMVrejeksiyon a{
+	background: url('../../graphics/menu/CMVrejeksiyon.png');	
+	width:163px;
+	-webkit-box-shadow: #362a7e 0px -10px 10px -10px inset;
+	-moz-box-shadow: #362a7e 0px -10px 10px -10px inset;
+	box-shadow: #362a7e 0px -10px 10px -10px inset;
+}
+.primary li.profilaksi a{
+	background: url('../../graphics/menu/profilaksi.png');
+	width:162px;
+	-webkit-box-shadow: #362a7e 0px -10px 10px -10px inset;
+	-moz-box-shadow: #362a7e 0px -10px 10px -10px inset;
+	box-shadow: #362a7e 0px -10px 10px -10px inset;
+}
+.primary li.kilavuzlar a{
+	background: url('../../graphics/menu/kilavuzlar.png');
+	width:158px;
+	-webkit-box-shadow: #362a7e 0px -10px 10px -10px inset;
+	-moz-box-shadow: #362a7e 0px -10px 10px -10px inset;
+	box-shadow: #362a7e 0px -10px 10px -10px inset;
+}*/
+
+/*.primary li.selected a{
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}*/
+
+
+
+
+/*: Content
+----------------------------------------------------------*/
+article {
+	width: 1024px; /*768px;*/
+	height: 768px;
+	float: left;
+	position: relative;
+	top: 0;
+	z-index: 1;
+	overflow: auto;
+	background-color: transparent;
+	background-image: none;
+	background-repeat: no-repeat;
+	color: inherit;
+	text-align: left;
+}
+
+article section {
+	width: 100%;	/* Full available width for page content (768px) minus padding-left and padding-right */
+	height: auto;
+	float: left;
+	display: none;
+	overflow: hidden;
+}
+
+article section.active {
+	display: block;
+}
+
+article section .scroller {
+	width: 100%;
+	padding-bottom: 40px;
+	float: left;
+}
+
+
+/*: Footer
+----------------------------------------------------------*/
+footer {
+	width: 100%;
+	height: 46px;
+	float: left;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 3;
+	background-image: url(../../graphics/footer-background.png);
+	background-repeat: no-repeat;
+}
+

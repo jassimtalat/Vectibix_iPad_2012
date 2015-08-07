@@ -1,0 +1,258 @@
+/*
+Overall typography definitions (applicapable to entire site).
+
+Site: Agnitio iPad Presentation Framework
+Author: Adam Barry
+Date: 23 September 2010
+Base by Adam Barry
+----------------------------------------------------------*/
+
+/***********************************************************
+Overall typography style definition
+***********************************************************/
+
+* {
+	background-color: transparent;
+	font-size: small;
+	color: black;
+
+	/*Remove iOS element onclick-highlight from all elements*/
+   	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+/*: Headings
+----------------------------------------------------------*/
+h1, h2, h3, dt, legend, span.heading {
+	margin-top: .2em;
+	margin-bottom: .4em;
+	background-color: transparent;	
+	text-align: left;	
+	white-space: normal;
+}
+
+h1 span {
+	display: none;
+}
+
+
+/*: Paragraphs
+----------------------------------------------------------*/
+p {
+	margin-bottom: 1.2em;
+	text-align: left;
+	
+}
+
+
+/*: Lists
+----------------------------------------------------------*/
+ul, ol, dl {
+	text-align: left;
+}
+
+li {
+	line-height: 1.3em;
+}
+
+dl {
+	list-style-type: none;
+}
+
+dt {
+}
+
+dd {
+	list-style-type: none;
+}
+
+
+/*: Font-sizes
+----------------------------------------------------------*/
+p, li, dd {
+}
+
+dd li, li p, dd p {
+}
+
+
+/*: Anchors/Links
+----------------------------------------------------------*/
+a, a:link, a:visited {
+	background-color: inherit;
+	font-weight: normal;
+	text-decoration: none;
+	color: #37658F;
+	cursor: pointer;
+}
+
+a:hover, a:active {
+	background-color: inherit;
+	color: #EF7430;
+	text-decoration: none;
+}
+
+
+/*: Images
+----------------------------------------------------------*/
+img {
+	border: none;
+}
+
+
+/*: Form elements
+----------------------------------------------------------*/
+form {
+	width: 100%;
+	border: none;
+	float: left;
+}
+
+fieldset {
+	width: 100%;
+	border: none;
+	float: left;
+}
+
+fieldset h2 {
+	width: 100%;
+	margin-bottom: 1em;
+	float: left;
+	font-size: 1.8em;
+	font-weight: normal;
+	background-color: transparent;
+	color: white;
+}
+
+#site fieldset ul {
+	width: 100%;
+	padding: 0 0 0 0;
+	float: left;
+}
+
+#site fieldset li {
+	width: 100%;
+	margin-left: 0;
+	float: left;
+	list-style-type: none;
+}
+
+fieldset label {
+	width: auto;
+	float: left;
+	font-size: 1.3em;
+}
+
+
+/*: Form elements: Checkboxes
+----------------------------------------------------------*/
+input[type="checkbox"] {
+	width: 52px;
+	height: 52px;
+	margin-right: 13px;
+	border: none;
+	float: left;
+	background-image: url(../graphics/form/checkbox.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+
+	-webkit-appearance: none;	/* Remove Safari default */
+}
+
+input[type="checkbox"]:checked {
+	background-position: 0 -52px;
+}
+
+li.checkbox {
+	margin-bottom: 10px;
+}
+
+li.checkbox label {
+	margin-top: 16px;
+}
+
+
+/*: Form elements: Radio-buttons
+----------------------------------------------------------*/
+li.radio {
+	width: 68px !important;
+	margin: 0 17px;
+}
+
+li.radio label {
+	width: 100%;
+	padding-bottom: .3em;
+	text-align: center;
+}
+
+input[type="radio"] {
+	width: 68px;
+	height: 68px;
+	border: none;
+	float: left;
+	position: relative;
+	display: inline-block;
+	background-image: url(../graphics/form/radio-sprite.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+
+	-webkit-appearance: none;	/* Remove Safari default */
+}
+
+input[type="radio"]:checked {
+	background-position: 0 -68px;
+}
+
+
+/*: Special styles used throughout the site
+----------------------------------------------------------*/
+.hidden {
+	display: none;
+}
+
+.pdf {
+	width: 32px;
+	height: 37px;
+	margin: 0 5px 5px 5px;
+	float: right;
+	display: block;
+	background-image: url(../graphics/pdf-icon.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.pdf span {
+	white-space: nowrap;
+	display: none;
+}
+
+.error {
+	background-color: transparent;
+	color: red;
+}
+
+
+/*
+General style definitions (applicapable to entire site).
+
+Site: Agnitio iPad Presentation Framework
+Author: Adam Barry
+Date: 23 September 2010
+Base by Adam Barry
+----------------------------------------------------------*/
+
+/***********************************************************
+Overall style definition
+***********************************************************/
+* { 	/* Remove padding and margin for all classes where
+	   these attributes are not defined. Fixes some IE
+	   bugs. */
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: #000;
+	text-align: center;
+	color: inherit;
+	cursor: default;
+}

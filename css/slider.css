@@ -1,0 +1,43 @@
+	#myslide, #myslidel {
+	width:920px;
+	overflow:hidden;
+	position: absolute;
+	left: 66px;
+	text-align:right;
+	height:275px;
+	top: 260px;
+	z-index: 5000;}
+
+	#myslide .cover, #myslidel .coverl{
+	position: absolute;
+	height:200px;
+	z-index: 6000;
+	}
+
+	#myslide .mystuff, #myslidel .mystuffl  {
+	width:100px;
+	
+	padding:20px 10px;
+	z-index: 6000;
+	}
+
+	.button1,.button2,.button3,.button4,.button5,.button6,.button7,.button8,.button9,.button10,.button11,.button12,.button13,.button14,
+.button15,.button16,.button17,.button08,.button19,.button20,.button21,.button22,.button23,.button24,.button25,.button26,.button27,.button28,
+.button29,.button30,.button31,.button32, .buttonl1,.buttonl2,.buttonl3,.buttonl4,.buttonl5,.buttonl6,.buttonl7,.buttonl8,.buttonl9,.buttonl10,.buttonl11,.buttonl12,.buttonl13,.buttonl14,
+.buttonl15,.buttonl16,.buttonl17,.buttonl08,.buttonl19,.buttonl20,.buttonl21,.buttonl22,.buttonl23,.buttonl24,.buttonl25,.buttonl26,.buttonl27,.buttonl28,
+.buttonl29,.buttonl30,.buttonl31,.buttonl32
+	{
+	display:block;
+	float:left;
+	width: 28px;
+	height: 350px;
+	z-index: 5000;
+}
+	
+	#button, #buttonl {
+	z-index: 5000;
+	position:absolute;
+	top: 280px;
+	left: 70px;
+	}
+	.clear{clear:both;}

@@ -1,0 +1,86 @@
+@charset "utf-8";
+/* CSS Document */
+.bblock{
+	float: left;
+	margin: 20px 35px 20px 0;
+}
+
+.block{
+	float: left;
+	margin: 20px 35px 20px 0;
+	width: 375px;
+}
+
+.block p{
+	margin: 10px 0;
+}
+
+select {
+	width: 330px;
+}
+
+#ntoggle {
+	display: block;
+	margin: 0 0 26px 0;
+}
+
+#box, #nbox{
+	margin: 20px 0;
+	width: 330px;
+	height: 260px;
+	background: #DFDFDF;
+	border: solid 1px #999;
+}
+
+#wqbox, #wbox{
+	margin: 20px 0;
+	width: 330px;
+	height: 260px;
+	background: #DFDFDF;
+	border: solid 1px #999;
+}
+
+.item {
+	position: absolute;
+	margin: 0px;
+	overflow: hidden;
+	z-index: 500000;
+	left: 0px;
+	bottom: 0px;
+}
+
+.last {
+	margin: 20px 0 40px 0;
+}
+
+.item .title, .item .desc {
+	background: #000;
+	color: #fff;
+	position: absolute;
+	display: block;
+	width: 1024px;
+}
+
+.item .title {
+	top: 0;
+	font-size: 16px;
+	padding: 12px 10px 25px 0;
+	text-align: right;
+}
+
+.item .desc {
+	bottom: 0;
+	font-size: 12px;
+	padding: 0px;
+	height: 90px;
+}
+
+.clear {
+	clear: both;
+}
+
+
+.mainthumbnailarea {
+	width: 1024px;
+	height: 90px;
+}
