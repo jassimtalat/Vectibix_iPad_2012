@@ -1,0 +1,137 @@
+#doc-gallery {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	z-index: 10000;
+	
+	/*width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 8; background-image: url(graphics/popupWindow/popup-bg.png);	*/
+}
+
+/*	image wrapper	*/
+#doc-gallery .wrapper {
+	position: absolute;
+	top: 43px;
+	bottom: 43px;
+	left: 0;
+	width: 100%;
+	background: #666;
+	
+	/*-webkit-transition: left 350ms;*/
+}
+
+#doc-gallery .wrapper figure {
+	width: 100%;
+	height: 100%;
+	display: -webkit-box;
+	-webkit-box-orient: horizontal;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+}
+
+#doc-gallery .wrapper img {
+	display: block;
+	-webkit-transition-property: height width;
+	-webkit-transition-duration: 350ms;
+}
+
+/*	slide navigation	*/
+#doc-gallery nav {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 43px;
+	background: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, rgb(61,61,61)),
+		color-stop(0.5, rgb(18,18,18)),
+		color-stop(0.51, rgb(0,0,0))
+	);
+	background: -webkit-gradient(
+		linear, 0 0, 0 100%, 
+		color-stop(0, #eeeeee), 
+		color-stop(0.05, #cccccc), 
+		color-stop(1, #999999)
+	);
+	line-height: 43px;
+	text-align: center;
+}
+
+#doc-gallery nav figure {
+	display: inline-block;
+	position: relative;
+	border-top: 1px solid #4e4e4e;
+	border-bottom: 1px solid #4e4e4e;
+	vertical-align: middle;
+}
+
+#doc-gallery nav figure:first-child {
+	border-left: 1px solid #4e4e4e;
+}
+
+#doc-gallery nav figure:last-child {
+	border-right: 1px solid #4e4e4e;
+}
+
+#doc-gallery nav img {
+	display: block;
+	height: 15px;
+	padding: 1px;
+	background: #fff;
+	border-right: 1px solid #ccc;
+}
+
+#doc-gallery nav figure.current {
+	margin: 0 -5px;
+	border: 1px solid rgba(0,0,0,0.2);
+	z-index: 100;
+}
+
+#doc-gallery nav .current img {
+	height: 25px;
+	border: none;
+}
+
+/*	header & back btn */
+#doc-gallery header {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 43px;
+	line-height: 43px;
+	background-image: -webkit-gradient(
+		linear, 0 0, 0 100%, 
+		color-stop(0, #eeeeee), 
+		color-stop(0.05, #cccccc), 
+		color-stop(1, #999999)
+	);
+	padding: 0;
+	color: #eee;
+	font-size: 20px;
+	text-align: center;
+	z-index: 1000!important;
+}
+
+#doc-gallery header input {
+	font-weight: bold;
+	text-align: center;
+	line-height: 28px;
+	color: white;
+	text-shadow: rgba(0,0,0,0.6) 0px -1px 0px;
+	position: absolute;
+	top: 8px;
+	left: 6px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-webkit-border-image: url(../graphics/pdf-viewer/backbutton.png) 0 7 0 14;
+	-webkit-border-radius: 0;
+	border-width: 0 7px 0 14px;
+	background: none;
+}

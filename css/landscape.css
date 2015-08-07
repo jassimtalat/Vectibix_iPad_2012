@@ -1,0 +1,66 @@
+/* 
+Landscape style definitions (applicapable to landscape-mode-view).
+
+Site: Agnitio iPad Presentation Framework
+Author: Adam Barry
+Date: 23 September 2010
+Base by Adam Barry
+----------------------------------------------------------*/
+
+/***********************************************************
+Global Layout definition
+***********************************************************/
+#container { /* Container responsible for centering #site */
+	display: none;
+}
+
+#site {
+	float: left;
+	display: none;
+}
+
+#PDFVIEWPage {
+	display: none;
+}
+
+
+/*: Landscape video window
+----------------------------------------------------------*/
+.landscapeVideo {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	z-index: 8;
+	background-color: transparent;
+	background-image: url(../graphics/popupWindow/popup-bg.png);
+	color: inherit;
+}
+
+
+.landscapeVideo .popupContainer {
+	width: 1024px;
+	padding: 0;
+	position: fixed;
+	top: 0;
+	left: 0;	
+}
+
+.landscapeVideo .popup {
+	width: 100%;
+	height: 748px;
+	border: none;
+	padding: 20px 0 0 0;
+	margin: 0;
+	float: left;
+	background-color: transparent;
+	color: inherit;
+}
+
+.landscapeVideo video {
+	width: 100%;
+	height: 100%;
+	float: left;
+}

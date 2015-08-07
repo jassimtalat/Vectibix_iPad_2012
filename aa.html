@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>iScroll demo: simple</title>
+<link rel="stylesheet" type="text/css" href="css/typography.css" />
+<link rel="stylesheet" type="text/css" href="css/general.css" />
+
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="src/iscroll.js"></script>
+<script type="text/javascript" src="../viewer/js/pdf.js"></script>
+<script type="text/javascript" src="../../viewer/js/monitor.js"></script>
+<script type="text/javascript" src="scripts/docGallery.js"></script>	
+<script type="text/javascript" src="scripts/webkitdragdrop.js"></script>
+
+
+<script type="text/javascript">
+
+var myScroll;
+function loaded() {
+	myScroll = new iScroll('wrapper');
+}
+
+document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+document.addEventListener('DOMContentLoaded', loaded, false);
+
+</script>
+<style type="text/css" media="all">
+@font-face { font-family: 'heading1';
+    src: url('fonts/TradeGothicLTStd-BdCn20.otf') format('truetype');}	
+
+body, ul, li { padding:0; margin:0; border:0; background:#fff; }
+body { font-size:12px; -webkit-user-select:none; -webkit-text-size-adjust:none; font-family:helvetica; }
+#wrapper { position:absolute; z-index:1; top:0px; bottom:0px; left:0; width:100%; overflow:auto; }
+#scroller { position:absolute; z-index:1; /*	-webkit-touch-callout:none;*/
+	-webkit-tap-highlight-color:rgba(0, 0, 0, 0); width:100%; padding:0; }
+#myFrame { position:absolute; top:0; left:0; }
+.reveal-modal2 {
+		background: #fff;
+		float: left;
+		padding: 25px 15px;
+		z-index:4000;
+		white-space: normal;
+}
+.reveal-modal2 ol {
+		margin: 0px;
+		padding: 0px;
+}
+.reveal-modal2 ol li {
+	color: #000;
+	text-align: left;
+	font: normal 15px 'heading1';
+	line-height: 35px;
+	margin: 0px;
+	padding: 0px;
+	float: left;
+	list-style-position: inside;
+	white-space: normal;
+}
+
+@font-face { font-family: 'heading1-it';
+    src: url('../fonts/TradeGothicLTStd-BdCn20Obl.otf') format('truetype');}	
+
+
+.italic {
+	font: bold 15px 'heading1-it';
+	color: #000;
+	font-style: italic;
+/*
+	font: bold 14px "Arial Narrow";
+	font-style: italic;*/
+}
+</style>
+</head>
+<body>
+<div id="wrapper">
+  <div id="scroller">
+    <div id="myModalr1" class="reveal-modal2">
+      <ol>
+<li onClick="openPDF('pdf/1.pdf');">Amado RG, Wolf M, Peeters M, <span class="italic">et al</span>. Wild-Type <span class="italic">KRAS</span> is required for panitumumab efficacy in patients with metastatic colorectal cancer. <span class="italic">J Clin Oncol.</span> 2008;26:1626-1634</li>
+<li onClick="openPDF('pdf/2.pdf');">Benvenuti S, Sartore-Bianchi A, Di Nicolantonio F, <span class="italic">et al</span>. Oncogenic activation of the RAS/RAF signaling pathway impairs the response of metastatic colorectal cancers to anti-epidermal  growth factor receptor antibody therapies. <span class="italic">Cancer Res</span>. 2007;67:2643-2648</li>
+<li onClick="openPDF('pdf/3.pdf');">Van Krieken JH, Jung A, Kirchner T, <span class="italic">et al</span>. <span class="italic">KRAS</span> mutation testing for predicting response to anti-EGFR therapy for colorectal carcinoma: proposal for an European quality assurance program.  <span class="italic">Virchows Arch</span>. 2008;453(5):417-431
+<li onClick="openPDF('pdf/4.pdf');">Tournigand C, André T, Achille E, <span class="italic">et al</span>. FOLFIRI followed by FOLFOX6 or the reverse sequence in advanced colorectal cancer: a randomized GERCOR study. <span class="italic">J Clin Oncol</span>. 2004;22:229-237</li>
+<li onClick="openPDF('pdf/5.pdf');">Giantonio BJ, Catalano PJ, Meropol NJ, <span class="italic">et al</span>. Bevacizumab in combination with oxaliplatin, fluorouracil, and leucovorin (FOLFOX4) for previously treated metastatic colorectal cancer: results   from the Eastern cooperative Oncology Group study E3200. <span class="italic">J Clin Oncol</span>. 2007;25:1539-1544</li>
+<li onClick="openPDF('pdf/6.pdf');">Sobrero AF, Maurel J, Fehrenbacher L, <span class="italic">et al</span>. EPIC: phase III trial of cetuximab plus irinotecan after fluoropyrimidine and oxaliplatin failure in patients with metastatic colorectal cancer.   <span class="italic">J Clin Oncol</span>. 2008;26:2311-2319</li>
+<li onClick="openPDF('pdf/7.pdf');">Koopman M, Antonini NF, Douma J, <span class="italic">et al</span>. Sequential versus combination chemotherapy with capecitabine, irinotecan, and oxaliplatin in advanced colorectal cancer (CAIRO): a phase III   randomised controlled trial. <span class="italic">Lancet</span>. 2007;370:135-142</li>
+<li onClick="openPDF('pdf/8.pdf');">Chen HX, Mooney M, Boron M, <span class="italic">et al</span>. Phase II multicenter trial of bevacizumab plus fluorouracil and leucovorin in patients with advanced refractory colorectal cancer: an NCI treatment   referral center trial TRC-0301. <span class="italic">J Clin Oncol</span>. 2006;24:3354-3360</li>
+<li onClick="openPDF('pdf/9.pdf');">SmPC Vectibix<sup>&reg;</sup>. Mei 2011. Amgen</li>
+<li onClick="openPDF('pdf/10.pdf');">Weber J, McCormack PL. Panitumumab in metastatic colorectal cancer with wild-type <span class="italic">KRAS</span>. <span class="italic">Biodrugs</span>. 2008;22(6):403-411</li>
+<li onClick="openPDF('pdf/11.pdf');">Siena S, Sartore-Bianchi A, Di Nicolantonio F, <span class="italic">et al</span>. Biomarkers predicting clinical outcome of epidermal growth factor receptor-targeted therapy in metastatic colorectal cancer.   &nbsp;&nbsp;<span class="italic">J Natl Cancer Inst</span>. 2009;101:1-17</li>
+<li onClick="openPDF('pdf/12.pdf');">Odom D, Barber B, Bennett L, <span class="italic">et al</span>. Health-related quality of life and colorectal cancer-specific symptoms in patients with chemotherapy-refractory metastatic disease treated with   &nbsp;&nbsp;panitumumab. <span class="italic">Int J Colorectal Dis</span>. 2011;26:173-181</li>
+<li onClick="openPDF('pdf/13.pdf');">Amado RG, Wolf M, Freeman D, <span class="italic">et al</span>. Panitumumab efficacy and patient-reported outcomes in metastatic colorectal cancer patients with wild-type <span class="italic">KRAS</span> tumor status. Poster presented at   &nbsp;&nbsp;ASCO-GI in Orlando. Januari 25-27, 2008:Abstract 278</li>
+<li onClick="openPDF('pdf/14.pdf');">FSCI Symptom Index. http://www.facit.org/FACITOrg/Questionnaires. Accessed on : 17 mei 2011</li>
+<li onClick="openPDF('pdf/15.pdf');">CieBOM. Eén herzien advies en één nieuw advies: Panitumumab- en cetuximab- monotherapie in de derde lijn bij de behandeling van het chemotherapierefractair gemetastaseerd   &nbsp;&nbsp;colorectaalcarcinoom. <span class="italic">Med oncol</span>. 2008;6:52-55</li>
+<li onClick="openPDF('pdf/16.pdf');">NZa. Beleidregel CI-1067, dure geneesmiddelen. September 2008</li>
+<li onClick="openPDF('pdf/17.pdf');">Hecht JR, Peeters M, Van Cutsem E, <span class="italic">et al</span>. Safety and tolerability of panitumumab, a fully human monoclonal antibody (MAb), in patients (pts) with metastatic colorectal cancer (mCRC).   &nbsp;&nbsp;Presented at ESMO in Instanbul. September 29-oktober 2, 2006: Abstract 361P </li>
+<li onClick="openPDF('pdf/18.pdf');">Lacouture ME, Mitchell EP, Piperdi B, <span class="italic">et al</span>. Skin toxicity evaluation protocol with panitumumab (STEPP), a phase II, open-label, randomized trial evaluating the impact of a pre-emptive   &nbsp;&nbsp;skin treatment regimen on skin toxicities and quality of life in patients with metastatic colorectal cancer. <span class="italic">J Clin Oncol</span>. 2010;28:1351-1357</li>
+<li>Farminform BV, data on file. Accessed on: 17 mei 2011</li> 
+    
+</ol>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+		docGallery.attach( '.doc-gallery-trigger' );
+</script>
+
+</body>
+</html>

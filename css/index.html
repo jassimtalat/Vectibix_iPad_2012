@@ -1,0 +1,879 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Vectibix</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  	<meta name="description" content="Presentation" />
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=5.0;" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<link rel="stylesheet" type="text/css" href="css/typography.css" />
+	<link rel="stylesheet" type="text/css" href="css/general.css" />
+    <link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" type="text/css" href="css/portrait.css" />
+    <link rel="stylesheet" type="text/css" href="css/docGallery.css" />
+	<script type="text/javascript" src="scripts/jquery.js"></script>
+	<script type="text/javascript" src="scripts/doclick.js"></script>	
+	<script type="text/javascript" src="scripts/iscroll.js"></script>
+	<script type="text/javascript" src="../viewer/js/pdf.js"></script>
+	<script type="text/javascript" src="../../viewer/js/monitor.js"></script>
+	<script type="text/javascript" src="scripts/webkitdragdrop.js"></script>
+	<script type="text/javascript" src="scripts/docGallery.js"></script>	
+	<script type="text/javascript" src="scripts/scripts.js"></script>
+    <script type="text/javascript" src="scripts/jquery.reveal.js"></script>	
+	<script type="text/javascript" src="scripts/jquery.cycle.all.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/slider.css" />
+
+    <script type="text/javascript">
+    $(document).ready(function() {
+		$('.whiteareapage3-1').cycle({ 
+			fx:     'blindX', 
+			speed:  500, 
+			next:   '.whiteareapage3-1 ', 
+			timeout: 0 
+		});
+    });
+	// choose your transition type, ex: fade, scrollUp /Down /Left /Right, shuffle, zoom, fadeZoom, slideX /slideY, turnUp /Down /Left /Right, blindX /Y /Z, growX /Y , curtainX / Y, cover, , uncover, toss, wipe, etc...
+	    $(document).ready(function() {
+		$('.whiteareapage3-2').cycle({ 
+			fx:     'blindX', 
+			speed:  500, 
+			next:   '.whiteareapage3-2 ', 
+			timeout: 0 
+		});
+    });
+	    $(document).ready(function() {
+		$('.whiteareapage3-3').cycle({ 
+			fx:     'blindX', 
+			speed:  500, 
+			next:   '.whiteareapage3-3 ', 
+			timeout: 0 
+		});
+    });
+	    $(document).ready(function() {
+		$('.whiteareapage3-4').cycle({ 
+			fx:     'blindX', 
+			speed:  500, 
+			next:   '.whiteareapage3-4 ', 
+			timeout: 0 
+		});
+    });
+	    $(document).ready(function() {
+		$('.whiteareapage4-1').cycle({ 
+			fx:     'blindX', 
+			speed:  500, 
+			next:   '.whiteareapage4-1', 
+			timeout: 0 
+		});
+    });
+	    $(document).ready(function() {
+		$('.whiteareapage4-2').cycle({ 
+			fx:     'blindX', 
+			speed:  500, 
+			next:   '.whiteareapage4-2', 
+			timeout: 0 
+		});
+    });
+	    $(document).ready(function() {
+		$('.page6imagearea').cycle({ 
+			fx:     'fade', 
+			speed:  1000, 
+			next:   '.whiteareapage4-1', 
+			timeout: 0
+		});
+    });
+		$(document).ready(function() {
+		$('.page7imagearea').cycle({ 
+			fx:     'fade', 
+			speed:  1000, 
+			next:   '.whiteareapage4-2', 
+			timeout: 0
+		});
+    });
+
+    </script>
+
+<script type="text/javascript"> 
+$(document).ready(function(){
+$(".flip").click(function(){
+    $(".thumbnailContainer").slideToggle("slow");
+  });
+});
+</script>
+    
+<script type="text/JavaScript">
+$(document).ready(function (){
+	$('#button a').click(function(){
+		var integer = $(this).attr('rel');
+		$('#myslide .cover').animate({left:+260*(parseInt(integer)-1)})  /*----- Width of div mystuff (here 160) ------ */
+		$('#button a').each(function(){
+		$(this).removeClass('active');
+			if($(this).hasClass('button'+integer)){
+				$(this).addClass('active')}
+		});
+	});	
+});
+</script> 
+</head>
+<body>
+                
+
+<!--<body class="active nameOfSection-to-enable-section-specific-styles">-->
+<div id="container">
+
+	<div id="site">
+        <section class="slider">
+        
+            <nav class="mainNavigation" role="navigation">
+                <ul id="mainNavigation" class="navigation primary">		
+                  <li><a href="#" ontouchstart="openPDF('pdf/9.pdf');">SmPC</a></li>                    
+					<li><a href="Javascript:void(0);" onClick="showSlideByIndex(8, this.parentNode);">Referenties</a></li>                    
+					<li><a href="Javascript:void(0);" onClick="showSlideByIndex(9, this.parentNode);" style="width:50px; font-size:40px;">*</a></li>
+					<li style="width:0px;"><a id="home"></a></li>
+                    <li class="home"><a href="Javascript:void(0);" onClick="showSlideByIndex(0, this.parentNode);"><div class="homes_button"></div></a></li>
+					<li><a href="Javascript:void(0);" onClick="showSlideByIndex(1, this.parentNode);">CT respons</a></li>
+					<li><a href="Javascript:void(0);" onClick="showSlideByIndex(2, this.parentNode);">SZ/OR</a></li>
+					<li><a href="Javascript:void(0);" onClick="showSlideByIndex(3, this.parentNode);">PFS</a></li>
+					<li><a href="Javascript:void(0);" onClick="showSlideByIndex(4, this.parentNode);">QoL</a></li>
+					<li><a href="Javascript:void(0);" onClick="showSlideByIndex(5, this.parentNode);">Toediening</a></li>
+					<li><a href="Javascript:void(0);" onClick="showSlideByIndex(6, this.parentNode);">Support</a></li>
+                </ul>
+            </nav>
+            <article id="main" role="main">
+
+                <!--<section id="Start" class="">
+                </section>-->
+
+                <!-- Tab lantus -->
+
+                <section id="turkCMV">
+                
+                
+                    <div class="slides" id="mainSlides" >
+                      <div class="fullView scroller">
+
+                            <div class="slideContainer">                                
+                                <div class="slide p1" data-monitoring-id="turkCMV" data-monitoring-name="Türkiye'de CMV Sıklığı">
+                                    <div class="basic">
+                                    <h1>Wanneer wilt u weten of de tumor bij uw <br>
+                                    patiënt met mCRC wild-type KRAS is?</h1>
+                                    
+                                    <h2>(Bij ongeveer 60% van de patiënten met mCRC is de tumor wild-type KRAS) <sup>1, 2, 3</sup></h2>
+                                    
+                   <div id="myslide">
+                        <div class="cover">
+                          <div class="mystuff"><img src="images/head-slider.png" width="127" height="253"></div>
+                        </div> <!-- end of div cover -->
+                    </div>  <!-- end of div myslide -->
+                    <div id="button">
+                       <a class="button1" rel="1" href="#"></a>
+                       <a class="button2" rel="2" href="#"></a>
+                       <a class="button3" rel="3" href="#"></a>
+                       <a class="button4" rel="4" href="#"></a>
+                    </div>
+                    <div class="clear"></div>
+
+                                    <div id="homepageruler">
+                                </div>
+
+                            <div id="homepagetextarea">
+                            <p>oxaliplatin <br>
+                            + 5-FU bevattende<br>
+                            chemotherapie<br>
+                            ± bevacizumab</p>
+                            
+                            <p>irinotecan <br>
+                            bevattende<br>
+                            chemotherapie</p>
+                            
+                            <p>Vectibix®  (EGFR inhibitor)</p>
+                            
+                            <p class="right">alleen Best<br> 
+                            Supportive <br>
+                            Care</p>
+                            
+                            </div>
+
+                            <div id="homepagebottomline">Voorbeeld van een behandelplan</div>
+
+                                    </div>
+                                </div>
+                                <div class="slide p2" data-monitoring-id="valcyte_logo" data-monitoring-name="Valcyte">
+                                        <div class="basic">
+
+            <div class="page2face"></div>
+            <div class="amgenleft"></div>  
+            <div class="r"><a href="#" data-reveal-id="myModalr1">R</a></div>
+            <div class="ra"><a href="#" data-reveal-id="myModal">*</a></div>
+            <div id="myModal" class="reveal-modal">
+            <ul>
+            <li>a.	Geselecteerde data uit beschikbare fase 3 studies naar tweede- <br>&nbsp;&nbsp;&nbsp;&nbsp;en derdelijnsschema’s met chemotherapie bij mCRC<sup>4-8</sup></li>
+            <li>b.	Bij patiënten met KRAS wild-type mCRC na falen van <br>&nbsp;&nbsp;&nbsp;&nbsp;fluoropyrimidine, oxaliplatin- en irinotecan- bevattende <br>&nbsp;&nbsp;&nbsp;&nbsp;chemotherapieregimes<sup>9</sup></li>
+            <li>c.	Kaplan-Meier curve van progressievrije overleving bij Vectibix<sup>&reg;</sup> <br>&nbsp;&nbsp;&nbsp;&nbsp;patiënten met wild-type KRAS mCRC (n=124), die een objectieve <br>&nbsp;&nbsp;&nbsp;&nbsp;respons of stabiele ziekte toonden, versus patiënten met <br>&nbsp;&nbsp;&nbsp;&nbsp;ziekteprogressie als beste respons<sup>10,11</sup></li>
+            <li>d.	Patiënten met wild-type KRAS mCRC, behandeld met Vectibix<sup>&reg;</sup> <br>&nbsp;&nbsp;&nbsp;&nbsp;laten een significante verlichting van symptomen zien t.o.v. <br>&nbsp;&nbsp;&nbsp;&nbsp;patiënten met wildtype KRAS mCRC behandeld met BSC alleen.<sup>13</sup> <br>&nbsp;&nbsp;&nbsp;&nbsp;Gemeten met vragenlijst FACT/NCCN CRC symptom index – FSCI</li>
+            <li>e.	Raadpleeg voor informatie over bijwerkingen de samenvatting <br>&nbsp;&nbsp;&nbsp;&nbsp;van productkenmerken<sup>9</sup></li>
+            </ul>
+            <a class="close-reveal-modal">&#215;</a>
+            </div>
+            
+            <div id="myModalr1" class="reveal-modal2">
+            <ol>
+<li ontouchstart="openPDF('pdf/1.pdf');">Amado RG, Wolf M, Peeters M, et al. Wild-Type KRAS is required for panitumumab efficacy in patients with metastatic colorectal cancer. J Clin Oncol. 2008;26:1626-1634</li>
+<li ontouchstart="openPDF('pdf/2.pdf');">Benvenuti S, Sartore-Bianchi A, Di Nicolantonio F, et al. Oncogenic activation of the RAS/RAF signaling pathway impairs the response of metastatic colorectal cancers to anti-epidermal <br>&nbsp;&nbsp;&nbsp;&nbsp;growth factor receptor antibody therapies. Cancer Res. 2007;67:2643-2648</li>
+<li ontouchstart="openPDF('pdf/3.pdf');">Van Krieken JH, Jung A, Kirchner T, et al. KRAS mutation testing for predicting response to anti-EGFR therapy for colorectal carcinoma: proposal for an European quality assurance program.<br>&nbsp;&nbsp;&nbsp;&nbsp;Virchows Arch. 2008;453(5):417-431
+<li ontouchstart="openPDF('pdf/4.pdf');">Tournigand C, André T, Achille E, et al. FOLFIRI followed by FOLFOX6 or the reverse sequence in advanced colorectal cancer: a randomized GERCOR study. J Clin Oncol. 2004;22:229-237</li>
+<li ontouchstart="openPDF('pdf/5.pdf');">Giantonio BJ, Catalano PJ, Meropol NJ, et al. Bevacizumab in combination with oxaliplatin, fluorouracil, and leucovorin (FOLFOX4) for previously treated metastatic colorectal cancer: results <br>&nbsp;&nbsp;&nbsp;&nbsp;from the Eastern cooperative Oncology Group study E3200. J Clin Oncol. 2007;25:1539-1544</li>
+<li ontouchstart="openPDF('pdf/6.pdf');">Sobrero AF, Maurel J, Fehrenbacher L, et al. EPIC: phase III trial of cetuximab plus irinotecan after fluoropyrimidine and oxaliplatin failure in patients with metastatic colorectal cancer. <br>&nbsp;&nbsp;&nbsp;&nbsp;J Clin Oncol. 2008;26:2311-2319</li>
+<li ontouchstart="openPDF('pdf/7.pdf');">Koopman M, Antonini NF, Douma J, et al. Sequential versus combination chemotherapy with capecitabine, irinotecan, and oxaliplatin in advanced colorectal cancer (CAIRO): a phase III <br>&nbsp;&nbsp;&nbsp;&nbsp;randomised controlled trial. Lancet. 2007;370:135-142</li>
+<li ontouchstart="openPDF('pdf/8.pdf');">Chen HX, Mooney M, Boron M, et al. Phase II multicenter trial of bevacizumab plus fluorouracil and leucovorin in patients with advanced refractory colorectal cancer: an NCI treatment <br>&nbsp;&nbsp;&nbsp;&nbsp;referral center trial TRC-0301. J Clin Oncol. 2006;24:3354-3360</li>
+<li ontouchstart="openPDF('pdf/9.pdf');">SmPC Vectibix®. April 2010. Amgen</li>
+<li ontouchstart="openPDF('pdf/10.pdf');">Weber J, McCormack PL. Panitumumab in metastatic colorectal cancer with wild-type KRAS. Biodrugs. 2008;22(6):403-411</li>
+<li ontouchstart="openPDF('pdf/11.pdf');">Siena S, Sartore-Bianchi A, Di Nicolantonio F, et al. Biomarkers predicting clinical outcome of epidermal growth factor receptor-targeted therapy in metastatic colorectal cancer. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;J Natl Cancer Inst. 2009;101:1-17</li>
+<li ontouchstart="openPDF('pdf/12.pdf');">Odom D, Barber B, Bennett L, et al. Health-related quality of life and colorectal cancer-specific symptoms in patients with chemotherapy-refractory metastatic disease treated with <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;panitumumab. Int J Colorectal Dis. 2011;26:173-181</li>
+<li ontouchstart="openPDF('pdf/13.pdf');">Amado RG, Wolf M, Freeman D, et al. Panitumumab efficacy and patient-reported outcomes in metastatic colorectal cancer patients with wild-type KRAS tumor status. Poster presented at <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ASCO-GI in Orlando. Januari 25-27, 2008:Abstract 278</li>
+<li ontouchstart="openPDF('pdf/14.pdf');">FSCI Symptom Index. http://www.facit.org/FACITOrg/Questionnaires. Accessed on : 17 mei 2011</li>
+<li ontouchstart="openPDF('pdf/15.pdf');">CieBOM. Eén herzien advies en één nieuw advies: Panitumumab- en cetuximab- monotherapie in de derde lijn bij de behandeling van het chemotherapierefractair gemetastaseerd <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;colorectaalcarcinoom. Med oncol. 2008;6:52-55</li>
+<li ontouchstart="openPDF('pdf/16.pdf');">NZa. Beleidregel CI-1067, dure geneesmiddelen. September 2008</li>
+<li ontouchstart="openPDF('pdf/17.pdf');">Hecht JR, Peeters M, Van Cutsem E, et al. Safety and tolerability of panitumumab, a fully human monoclonal antibody (MAb), in patients (pts) with metastatic colorectal cancer (mCRC). <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Presented at ESMO in Instanbul. September 29-oktober 2, 2006: Abstract 361P </li>
+<li ontouchstart="openPDF('pdf/18.pdf');">Lacouture ME, Mitchell EP, Piperdi B, et al. Skin toxicity evaluation protocol with panitumumab (STEPP), a phase II, open-label, randomized trial evaluating the impact of a pre-emptive <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;skin treatment regimen on skin toxicities and quality of life in patients with metastatic colorectal cancer. J Clin Oncol. 2010;28:1351-1357</li>
+<li>Farminform BV, data on file. Accessed on: 17 mei 2011</li>       
+            </ol>
+            <a class="close-reveal-modal">&#215;</a>
+            </div>
+            
+            
+            
+            <div class="page2heading">U ziet de responspercentages van <br>
+            chemotherapie afnemen...</div>
+            
+            <div class="grapharea">
+                <div class="graphbg">
+                    <img src="images/page2-graphbg.png" width="590" height="431">
+                    <div id="r5l1"><img src="images/page2/page2-silverbars.png" width="272" height="338"></div>
+                    <div id="r5l2"><img src="images/page2/page2-golden.png" width="158" height="338"></div>
+                    <div id="r5l1_show" ></div>
+                    <div id="r5l2_show" ></div>
+                </div>
+            </div>
+            
+            <div class="subheading">Bewerkt naar: Tournigand C. 2004; Giantonio BJ. 2007; Sobrero AF. 2008; Koopman M. 2007; Chen HX. 2006. <sup>4-8</sup></div>
+            
+            <div class="whiteareapage2">
+            <span>•</span> De kans op een objectieve respons bij mCRC patiënten neemt af<br>
+                 &nbsp;&nbsp;&nbsp;&nbsp;in de loop van de behandeling <sup>a, 4-8</sup>
+            </div>
+                                                            
+                                                            
+                                                        </div>
+                                                </div>
+                                                
+            <div class="slide p3" data-monitoring-id="valcyte_logo" data-monitoring-name="Valcyte">
+                                                        <div class="basic">
+            <div class="page3face"></div>
+            <div class="amgenright"></div>
+            <div class="vectibix"></div>  
+            <div class="r2"><a href="#" data-reveal-id="myModalr2">R</a></div>
+            <div class="ra2"><a href="#" data-reveal-id="myModal2">*</a></div>
+            <div id="myModal2" class="reveal-modal">
+            <ul>
+            <li>a.	Geselecteerde data uit beschikbare fase 3 studies naar tweede- <br>&nbsp;&nbsp;&nbsp;&nbsp;en derdelijnsschema’s met chemotherapie bij mCRC<sup>4-8</sup></li>
+            <li>b.	Bij patiënten met KRAS wild-type mCRC na falen van <br>&nbsp;&nbsp;&nbsp;&nbsp;fluoropyrimidine, oxaliplatin- en irinotecan- bevattende <br>&nbsp;&nbsp;&nbsp;&nbsp;chemotherapieregimes<sup>9</sup></li>
+            <li>c.	Kaplan-Meier curve van progressievrije overleving bij Vectibix<sup>&reg;</sup> <br>&nbsp;&nbsp;&nbsp;&nbsp;patiënten met wild-type KRAS mCRC (n=124), die een objectieve <br>&nbsp;&nbsp;&nbsp;&nbsp;respons of stabiele ziekte toonden, versus patiënten met <br>&nbsp;&nbsp;&nbsp;&nbsp;ziekteprogressie als beste respons<sup>10,11</sup></li>
+            <li>d.	Patiënten met wild-type KRAS mCRC, behandeld met Vectibix<sup>&reg;</sup> <br>&nbsp;&nbsp;&nbsp;&nbsp;laten een significante verlichting van symptomen zien t.o.v. <br>&nbsp;&nbsp;&nbsp;&nbsp;patiënten met wildtype KRAS mCRC behandeld met BSC alleen.<sup>13</sup> <br>&nbsp;&nbsp;&nbsp;&nbsp;Gemeten met vragenlijst FACT/NCCN CRC symptom index – FSCI</li>
+            <li>e.	Raadpleeg voor informatie over bijwerkingen de samenvatting <br>&nbsp;&nbsp;&nbsp;&nbsp;van productkenmerken<sup>9</sup></li>
+            </ul>
+            <a class="close-reveal-modal">&#215;</a>
+            </div>                                          
+            
+            <div id="myModalr2" class="reveal-modal2">
+            
+            <ol>
+<li ontouchstart="openPDF('pdf/1.pdf');">Amado RG, Wolf M, Peeters M, et al. Wild-Type KRAS is required for panitumumab efficacy in patients with metastatic colorectal cancer. J Clin Oncol. 2008;26:1626-1634</li>
+<li ontouchstart="openPDF('pdf/2.pdf');">Benvenuti S, Sartore-Bianchi A, Di Nicolantonio F, et al. Oncogenic activation of the RAS/RAF signaling pathway impairs the response of metastatic colorectal cancers to anti-epidermal <br>&nbsp;&nbsp;&nbsp;&nbsp;growth factor receptor antibody therapies. Cancer Res. 2007;67:2643-2648</li>
+<li ontouchstart="openPDF('pdf/3.pdf');">Van Krieken JH, Jung A, Kirchner T, et al. KRAS mutation testing for predicting response to anti-EGFR therapy for colorectal carcinoma: proposal for an European quality assurance program.<br>&nbsp;&nbsp;&nbsp;&nbsp;Virchows Arch. 2008;453(5):417-431
+<li ontouchstart="openPDF('pdf/4.pdf');">Tournigand C, André T, Achille E, et al. FOLFIRI followed by FOLFOX6 or the reverse sequence in advanced colorectal cancer: a randomized GERCOR study. J Clin Oncol. 2004;22:229-237</li>
+<li ontouchstart="openPDF('pdf/5.pdf');">Giantonio BJ, Catalano PJ, Meropol NJ, et al. Bevacizumab in combination with oxaliplatin, fluorouracil, and leucovorin (FOLFOX4) for previously treated metastatic colorectal cancer: results <br>&nbsp;&nbsp;&nbsp;&nbsp;from the Eastern cooperative Oncology Group study E3200. J Clin Oncol. 2007;25:1539-1544</li>
+<li ontouchstart="openPDF('pdf/6.pdf');">Sobrero AF, Maurel J, Fehrenbacher L, et al. EPIC: phase III trial of cetuximab plus irinotecan after fluoropyrimidine and oxaliplatin failure in patients with metastatic colorectal cancer. <br>&nbsp;&nbsp;&nbsp;&nbsp;J Clin Oncol. 2008;26:2311-2319</li>
+<li ontouchstart="openPDF('pdf/7.pdf');">Koopman M, Antonini NF, Douma J, et al. Sequential versus combination chemotherapy with capecitabine, irinotecan, and oxaliplatin in advanced colorectal cancer (CAIRO): a phase III <br>&nbsp;&nbsp;&nbsp;&nbsp;randomised controlled trial. Lancet. 2007;370:135-142</li>
+<li ontouchstart="openPDF('pdf/8.pdf');">Chen HX, Mooney M, Boron M, et al. Phase II multicenter trial of bevacizumab plus fluorouracil and leucovorin in patients with advanced refractory colorectal cancer: an NCI treatment <br>&nbsp;&nbsp;&nbsp;&nbsp;referral center trial TRC-0301. J Clin Oncol. 2006;24:3354-3360</li>
+<li ontouchstart="openPDF('pdf/9.pdf');">SmPC Vectibix®. April 2010. Amgen</li>
+<li ontouchstart="openPDF('pdf/10.pdf');">Weber J, McCormack PL. Panitumumab in metastatic colorectal cancer with wild-type KRAS. Biodrugs. 2008;22(6):403-411</li>
+<li ontouchstart="openPDF('pdf/11.pdf');">Siena S, Sartore-Bianchi A, Di Nicolantonio F, et al. Biomarkers predicting clinical outcome of epidermal growth factor receptor-targeted therapy in metastatic colorectal cancer. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;J Natl Cancer Inst. 2009;101:1-17</li>
+<li ontouchstart="openPDF('pdf/12.pdf');">Odom D, Barber B, Bennett L, et al. Health-related quality of life and colorectal cancer-specific symptoms in patients with chemotherapy-refractory metastatic disease treated with <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;panitumumab. Int J Colorectal Dis. 2011;26:173-181</li>
+<li ontouchstart="openPDF('pdf/13.pdf');">Amado RG, Wolf M, Freeman D, et al. Panitumumab efficacy and patient-reported outcomes in metastatic colorectal cancer patients with wild-type KRAS tumor status. Poster presented at <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ASCO-GI in Orlando. Januari 25-27, 2008:Abstract 278</li>
+<li ontouchstart="openPDF('pdf/14.pdf');">FSCI Symptom Index. http://www.facit.org/FACITOrg/Questionnaires. Accessed on : 17 mei 2011</li>
+<li ontouchstart="openPDF('pdf/15.pdf');">CieBOM. Eén herzien advies en één nieuw advies: Panitumumab- en cetuximab- monotherapie in de derde lijn bij de behandeling van het chemotherapierefractair gemetastaseerd <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;colorectaalcarcinoom. Med oncol. 2008;6:52-55</li>
+<li ontouchstart="openPDF('pdf/16.pdf');">NZa. Beleidregel CI-1067, dure geneesmiddelen. September 2008</li>
+<li ontouchstart="openPDF('pdf/17.pdf');">Hecht JR, Peeters M, Van Cutsem E, et al. Safety and tolerability of panitumumab, a fully human monoclonal antibody (MAb), in patients (pts) with metastatic colorectal cancer (mCRC). <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Presented at ESMO in Instanbul. September 29-oktober 2, 2006: Abstract 361P </li>
+<li ontouchstart="openPDF('pdf/18.pdf');">Lacouture ME, Mitchell EP, Piperdi B, et al. Skin toxicity evaluation protocol with panitumumab (STEPP), a phase II, open-label, randomized trial evaluating the impact of a pre-emptive <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;skin treatment regimen on skin toxicities and quality of life in patients with metastatic colorectal cancer. J Clin Oncol. 2010;28:1351-1357</li>
+<li>Farminform BV, data on file. Accessed on: 17 mei 2011</li>       
+            </ol>
+            <a class="close-reveal-modal">&#215;</a>
+            </div>
+            
+            
+            <div class="page2heading">U kent de therapeutische waarde<br> 
+            van Vectibix<sup>&reg; b, 1, 9</sup> </div>
+            
+            <div class="grapharea">
+                <div class="graphbg">
+                    <img src="images/page3/page3-graphbg.png" width="590" height="431">
+                      <div id="r7l1"><img src="images/page3/page3-silver1.png"></div>
+                      <div id="r7l2"><img src="images/page3/page3-gold1.png"></div>
+                      <div id="r7l3"><img src="images/page3/page3-gold2.png"></div>
+                      <div id="r7l4"><img src="images/page3/page3-silvergold.png"></div>
+                      <div id="r7l1_show" ></div>
+                      <div id="r7l2_show" ></div>
+                      <div id="r7l3_show" ></div>
+                      <div id="r7l4_show" ></div>
+                </div>
+            </div>
+            
+            <div class="subheading">Bewerkt naar Amado RG. 2008.<sup>1</sup></div>
+            <div class="subheading2">* BSC = Best Supportive Care</div>
+            
+            <div class="whiteareapage3-1">
+                        <img src="images/page6_peel.png" width="573" height="113" />
+                        <img src="images/blank.gif" width="573" height="113" />
+            </div>
+            <div class="subheading3">b  Bij patiënten met wild-type KRAS mCRC na falen van fluoropyrimidine, oxaliplatin- en irinotecan- bevattende chemotherapieregimes <sup>9</sup></div>
+            
+                                                            
+                                                            
+                                                        </div>
+                                              </div>  
+                                                
+            <div class="slide p4" data-monitoring-id="valcyte_logo" data-monitoring-name="Valcyte">
+                                                        <div class="basic">
+            <div class="page4face"></div>
+            <div class="amgenleft"></div>
+            <div class="vectibixleft"></div>  
+            <div class="r"><a href="#" data-reveal-id="myModalr3">R</a></div>
+            <div class="ra"><a href="#" data-reveal-id="myModal3">*</a></div>
+            <div id="myModal3" class="reveal-modal">
+            <ul>
+            <li>a.	Geselecteerde data uit beschikbare fase 3 studies naar tweede- <br>&nbsp;&nbsp;&nbsp;&nbsp;en derdelijnsschema’s met chemotherapie bij mCRC<sup>4-8</sup></li>
+            <li>b.	Bij patiënten met KRAS wild-type mCRC na falen van <br>&nbsp;&nbsp;&nbsp;&nbsp;fluoropyrimidine, oxaliplatin- en irinotecan- bevattende <br>&nbsp;&nbsp;&nbsp;&nbsp;chemotherapieregimes<sup>9</sup></li>
+            <li>c.	Kaplan-Meier curve van progressievrije overleving bij Vectibix<sup>&reg;</sup> <br>&nbsp;&nbsp;&nbsp;&nbsp;patiënten met wild-type KRAS mCRC (n=124), die een objectieve <br>&nbsp;&nbsp;&nbsp;&nbsp;respons of stabiele ziekte toonden, versus patiënten met <br>&nbsp;&nbsp;&nbsp;&nbsp;ziekteprogressie als beste respons<sup>10,11</sup></li>
+            <li>d.	Patiënten met wild-type KRAS mCRC, behandeld met Vectibix<sup>&reg;</sup> <br>&nbsp;&nbsp;&nbsp;&nbsp;laten een significante verlichting van symptomen zien t.o.v. <br>&nbsp;&nbsp;&nbsp;&nbsp;patiënten met wildtype KRAS mCRC behandeld met BSC alleen.<sup>13</sup> <br>&nbsp;&nbsp;&nbsp;&nbsp;Gemeten met vragenlijst FACT/NCCN CRC symptom index – FSCI</li>
+            <li>e.	Raadpleeg voor informatie over bijwerkingen de samenvatting <br>&nbsp;&nbsp;&nbsp;&nbsp;van productkenmerken<sup>9</sup></li>
+            </ul>
+            <a class="close-reveal-modal">&#215;</a>
+            </div>
+            
+            <div id="myModalr3" class="reveal-modal2">
+            
+            <ol>
+<li ontouchstart="openPDF('pdf/1.pdf');">Amado RG, Wolf M, Peeters M, et al. Wild-Type KRAS is required for panitumumab efficacy in patients with metastatic colorectal cancer. J Clin Oncol. 2008;26:1626-1634</li>
+<li ontouchstart="openPDF('pdf/2.pdf');">Benvenuti S, Sartore-Bianchi A, Di Nicolantonio F, et al. Oncogenic activation of the RAS/RAF signaling pathway impairs the response of metastatic colorectal cancers to anti-epidermal <br>&nbsp;&nbsp;&nbsp;&nbsp;growth factor receptor antibody therapies. Cancer Res. 2007;67:2643-2648</li>
+<li ontouchstart="openPDF('pdf/3.pdf');">Van Krieken JH, Jung A, Kirchner T, et al. KRAS mutation testing for predicting response to anti-EGFR therapy for colorectal carcinoma: proposal for an European quality assurance program.<br>&nbsp;&nbsp;&nbsp;&nbsp;Virchows Arch. 2008;453(5):417-431
+<li ontouchstart="openPDF('pdf/4.pdf');">Tournigand C, André T, Achille E, et al. FOLFIRI followed by FOLFOX6 or the reverse sequence in advanced colorectal cancer: a randomized GERCOR study. J Clin Oncol. 2004;22:229-237</li>
+<li ontouchstart="openPDF('pdf/5.pdf');">Giantonio BJ, Catalano PJ, Meropol NJ, et al. Bevacizumab in combination with oxaliplatin, fluorouracil, and leucovorin (FOLFOX4) for previously treated metastatic colorectal cancer: results <br>&nbsp;&nbsp;&nbsp;&nbsp;from the Eastern cooperative Oncology Group study E3200. J Clin Oncol. 2007;25:1539-1544</li>
+<li ontouchstart="openPDF('pdf/6.pdf');">Sobrero AF, Maurel J, Fehrenbacher L, et al. EPIC: phase III trial of cetuximab plus irinotecan after fluoropyrimidine and oxaliplatin failure in patients with metastatic colorectal cancer. <br>&nbsp;&nbsp;&nbsp;&nbsp;J Clin Oncol. 2008;26:2311-2319</li>
+<li ontouchstart="openPDF('pdf/7.pdf');">Koopman M, Antonini NF, Douma J, et al. Sequential versus combination chemotherapy with capecitabine, irinotecan, and oxaliplatin in advanced colorectal cancer (CAIRO): a phase III <br>&nbsp;&nbsp;&nbsp;&nbsp;randomised controlled trial. Lancet. 2007;370:135-142</li>
+<li ontouchstart="openPDF('pdf/8.pdf');">Chen HX, Mooney M, Boron M, et al. Phase II multicenter trial of bevacizumab plus fluorouracil and leucovorin in patients with advanced refractory colorectal cancer: an NCI treatment <br>&nbsp;&nbsp;&nbsp;&nbsp;referral center trial TRC-0301. J Clin Oncol. 2006;24:3354-3360</li>
+<li ontouchstart="openPDF('pdf/9.pdf');">SmPC Vectibix®. April 2010. Amgen</li>
+<li ontouchstart="openPDF('pdf/10.pdf');">Weber J, McCormack PL. Panitumumab in metastatic colorectal cancer with wild-type KRAS. Biodrugs. 2008;22(6):403-411</li>
+<li ontouchstart="openPDF('pdf/11.pdf');">Siena S, Sartore-Bianchi A, Di Nicolantonio F, et al. Biomarkers predicting clinical outcome of epidermal growth factor receptor-targeted therapy in metastatic colorectal cancer. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;J Natl Cancer Inst. 2009;101:1-17</li>
+<li ontouchstart="openPDF('pdf/12.pdf');">Odom D, Barber B, Bennett L, et al. Health-related quality of life and colorectal cancer-specific symptoms in patients with chemotherapy-refractory metastatic disease treated with <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;panitumumab. Int J Colorectal Dis. 2011;26:173-181</li>
+<li ontouchstart="openPDF('pdf/13.pdf');">Amado RG, Wolf M, Freeman D, et al. Panitumumab efficacy and patient-reported outcomes in metastatic colorectal cancer patients with wild-type KRAS tumor status. Poster presented at <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ASCO-GI in Orlando. Januari 25-27, 2008:Abstract 278</li>
+<li ontouchstart="openPDF('pdf/14.pdf');">FSCI Symptom Index. http://www.facit.org/FACITOrg/Questionnaires. Accessed on : 17 mei 2011</li>
+<li ontouchstart="openPDF('pdf/15.pdf');">CieBOM. Eén herzien advies en één nieuw advies: Panitumumab- en cetuximab- monotherapie in de derde lijn bij de behandeling van het chemotherapierefractair gemetastaseerd <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;colorectaalcarcinoom. Med oncol. 2008;6:52-55</li>
+<li ontouchstart="openPDF('pdf/16.pdf');">NZa. Beleidregel CI-1067, dure geneesmiddelen. September 2008</li>
+<li ontouchstart="openPDF('pdf/17.pdf');">Hecht JR, Peeters M, Van Cutsem E, et al. Safety and tolerability of panitumumab, a fully human monoclonal antibody (MAb), in patients (pts) with metastatic colorectal cancer (mCRC). <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Presented at ESMO in Instanbul. September 29-oktober 2, 2006: Abstract 361P </li>
+<li ontouchstart="openPDF('pdf/18.pdf');">Lacouture ME, Mitchell EP, Piperdi B, et al. Skin toxicity evaluation protocol with panitumumab (STEPP), a phase II, open-label, randomized trial evaluating the impact of a pre-emptive <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;skin treatment regimen on skin toxicities and quality of life in patients with metastatic colorectal cancer. J Clin Oncol. 2010;28:1351-1357</li>
+<li>Farminform BV, data on file. Accessed on: 17 mei 2011</li>       
+            </ol>
+            <a class="close-reveal-modal">&#215;</a>
+            </div>
+            
+            
+            <div class="page2heading">U wilt een therapie die zich in een<br>
+            maandenlange PFS kan vertalen...<sup>10, 11</sup></div>
+            
+            <div class="grapharea">
+                <div class="graphbg">
+                    <img src="images/page4/page4-graphbg.png" width="590" height="431">
+                        <div id="r4l1"><img src="images/page4/page4-graph100-50.png"></div>
+                        <div id="r4s1"><img src="images/page4/graph4-hordots.png"></div>
+                        <div id="r4s2"><img src="images/page4/graph4-verdots.png"></div>
+                        <div id="r4s3"><img src="images/page4/page4-yellowboc.png"></div>
+                        <div id="r4l2"><img src="images/page4/page4-graph50-0.png"></div>
+                        <div id="r4l1_show" ></div>
+           				<div id="r4l2_show" ></div>
+                </div>
+            </div>
+            
+            <div class="subheading">Bewerkt naar Siena S. 2009. <sup>11</sup></div>
+            
+            
+            <div class="whiteareapage3-2">
+                        <img src="images/page6_peel3.png" width="573" height="113" />
+                        <img src="images/blank.gif" width="573" height="113" />
+            </div>
+            
+            <div class="subheading3">b  Bij patiënten met wild-type KRAS mCRC na falen van fluoropyrimidine, oxaliplatin- en irinotecan- bevattende chemotherapieregimes <sup>9</sup></div>
+            
+                                                            
+                                                            
+                              </div>
+                                              </div>  
+                                                
+            <div class="slide p5" data-monitoring-id="valcyte_logo" data-monitoring-name="Valcyte">
+                                                        <div class="basic">
+            <div class="page5face"></div>
+            <div class="amgenright"></div>
+            <div class="vectibix"></div>  
+            <div class="r2"><a href="#" data-reveal-id="myModalr4">R</a></div>
+            <div class="ra2"><a href="#" data-reveal-id="myModal4">*</a></div>
+            <div id="myModal4" class="reveal-modal">
+            <ul>
+            <li>a.	Geselecteerde data uit beschikbare fase 3 studies naar tweede- <br>&nbsp;&nbsp;&nbsp;&nbsp;en derdelijnsschema’s met chemotherapie bij mCRC<sup>4-8</sup></li>
+            <li>b.	Bij patiënten met KRAS wild-type mCRC na falen van <br>&nbsp;&nbsp;&nbsp;&nbsp;fluoropyrimidine, oxaliplatin- en irinotecan- bevattende <br>&nbsp;&nbsp;&nbsp;&nbsp;chemotherapieregimes<sup>9</sup></li>
+            <li>c.	Kaplan-Meier curve van progressievrije overleving bij Vectibix<sup>&reg;</sup> <br>&nbsp;&nbsp;&nbsp;&nbsp;patiënten met wild-type KRAS mCRC (n=124), die een objectieve <br>&nbsp;&nbsp;&nbsp;&nbsp;respons of stabiele ziekte toonden, versus patiënten met <br>&nbsp;&nbsp;&nbsp;&nbsp;ziekteprogressie als beste respons<sup>10,11</sup></li>
+            <li>d.	Patiënten met wild-type KRAS mCRC, behandeld met Vectibix<sup>&reg;</sup> <br>&nbsp;&nbsp;&nbsp;&nbsp;laten een significante verlichting van symptomen zien t.o.v. <br>&nbsp;&nbsp;&nbsp;&nbsp;patiënten met wildtype KRAS mCRC behandeld met BSC alleen.<sup>13</sup> <br>&nbsp;&nbsp;&nbsp;&nbsp;Gemeten met vragenlijst FACT/NCCN CRC symptom index – FSCI</li>
+            <li>e.	Raadpleeg voor informatie over bijwerkingen de samenvatting <br>&nbsp;&nbsp;&nbsp;&nbsp;van productkenmerken<sup>9</sup></li>
+            </ul>
+            <a class="close-reveal-modal">&#215;</a>
+            </div>
+            
+            <div id="myModalr4" class="reveal-modal2">
+            
+            <ol>
+<li ontouchstart="openPDF('pdf/1.pdf');">Amado RG, Wolf M, Peeters M, et al. Wild-Type KRAS is required for panitumumab efficacy in patients with metastatic colorectal cancer. J Clin Oncol. 2008;26:1626-1634</li>
+<li ontouchstart="openPDF('pdf/2.pdf');">Benvenuti S, Sartore-Bianchi A, Di Nicolantonio F, et al. Oncogenic activation of the RAS/RAF signaling pathway impairs the response of metastatic colorectal cancers to anti-epidermal <br>&nbsp;&nbsp;&nbsp;&nbsp;growth factor receptor antibody therapies. Cancer Res. 2007;67:2643-2648</li>
+<li ontouchstart="openPDF('pdf/3.pdf');">Van Krieken JH, Jung A, Kirchner T, et al. KRAS mutation testing for predicting response to anti-EGFR therapy for colorectal carcinoma: proposal for an European quality assurance program.<br>&nbsp;&nbsp;&nbsp;&nbsp;Virchows Arch. 2008;453(5):417-431
+<li ontouchstart="openPDF('pdf/4.pdf');">Tournigand C, André T, Achille E, et al. FOLFIRI followed by FOLFOX6 or the reverse sequence in advanced colorectal cancer: a randomized GERCOR study. J Clin Oncol. 2004;22:229-237</li>
+<li ontouchstart="openPDF('pdf/5.pdf');">Giantonio BJ, Catalano PJ, Meropol NJ, et al. Bevacizumab in combination with oxaliplatin, fluorouracil, and leucovorin (FOLFOX4) for previously treated metastatic colorectal cancer: results <br>&nbsp;&nbsp;&nbsp;&nbsp;from the Eastern cooperative Oncology Group study E3200. J Clin Oncol. 2007;25:1539-1544</li>
+<li ontouchstart="openPDF('pdf/6.pdf');">Sobrero AF, Maurel J, Fehrenbacher L, et al. EPIC: phase III trial of cetuximab plus irinotecan after fluoropyrimidine and oxaliplatin failure in patients with metastatic colorectal cancer. <br>&nbsp;&nbsp;&nbsp;&nbsp;J Clin Oncol. 2008;26:2311-2319</li>
+<li ontouchstart="openPDF('pdf/7.pdf');">Koopman M, Antonini NF, Douma J, et al. Sequential versus combination chemotherapy with capecitabine, irinotecan, and oxaliplatin in advanced colorectal cancer (CAIRO): a phase III <br>&nbsp;&nbsp;&nbsp;&nbsp;randomised controlled trial. Lancet. 2007;370:135-142</li>
+<li ontouchstart="openPDF('pdf/8.pdf');">Chen HX, Mooney M, Boron M, et al. Phase II multicenter trial of bevacizumab plus fluorouracil and leucovorin in patients with advanced refractory colorectal cancer: an NCI treatment <br>&nbsp;&nbsp;&nbsp;&nbsp;referral center trial TRC-0301. J Clin Oncol. 2006;24:3354-3360</li>
+<li ontouchstart="openPDF('pdf/9.pdf');">SmPC Vectibix®. April 2010. Amgen</li>
+<li ontouchstart="openPDF('pdf/10.pdf');">Weber J, McCormack PL. Panitumumab in metastatic colorectal cancer with wild-type KRAS. Biodrugs. 2008;22(6):403-411</li>
+<li ontouchstart="openPDF('pdf/11.pdf');">Siena S, Sartore-Bianchi A, Di Nicolantonio F, et al. Biomarkers predicting clinical outcome of epidermal growth factor receptor-targeted therapy in metastatic colorectal cancer. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;J Natl Cancer Inst. 2009;101:1-17</li>
+<li ontouchstart="openPDF('pdf/12.pdf');">Odom D, Barber B, Bennett L, et al. Health-related quality of life and colorectal cancer-specific symptoms in patients with chemotherapy-refractory metastatic disease treated with <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;panitumumab. Int J Colorectal Dis. 2011;26:173-181</li>
+<li ontouchstart="openPDF('pdf/13.pdf');">Amado RG, Wolf M, Freeman D, et al. Panitumumab efficacy and patient-reported outcomes in metastatic colorectal cancer patients with wild-type KRAS tumor status. Poster presented at <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ASCO-GI in Orlando. Januari 25-27, 2008:Abstract 278</li>
+<li ontouchstart="openPDF('pdf/14.pdf');">FSCI Symptom Index. http://www.facit.org/FACITOrg/Questionnaires. Accessed on : 17 mei 2011</li>
+<li ontouchstart="openPDF('pdf/15.pdf');">CieBOM. Eén herzien advies en één nieuw advies: Panitumumab- en cetuximab- monotherapie in de derde lijn bij de behandeling van het chemotherapierefractair gemetastaseerd <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;colorectaalcarcinoom. Med oncol. 2008;6:52-55</li>
+<li ontouchstart="openPDF('pdf/16.pdf');">NZa. Beleidregel CI-1067, dure geneesmiddelen. September 2008</li>
+<li ontouchstart="openPDF('pdf/17.pdf');">Hecht JR, Peeters M, Van Cutsem E, et al. Safety and tolerability of panitumumab, a fully human monoclonal antibody (MAb), in patients (pts) with metastatic colorectal cancer (mCRC). <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Presented at ESMO in Instanbul. September 29-oktober 2, 2006: Abstract 361P </li>
+<li ontouchstart="openPDF('pdf/18.pdf');">Lacouture ME, Mitchell EP, Piperdi B, et al. Skin toxicity evaluation protocol with panitumumab (STEPP), a phase II, open-label, randomized trial evaluating the impact of a pre-emptive <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;skin treatment regimen on skin toxicities and quality of life in patients with metastatic colorectal cancer. J Clin Oncol. 2010;28:1351-1357</li>
+<li>Farminform BV, data on file. Accessed on: 17 mei 2011</li>       
+            </ol>
+            <a class="close-reveal-modal">&#215;</a>
+            </div>
+            
+            
+            
+            <div class="page2heading">U wilt effectiviteit,<br>
+            maar niet tot elke prijs...</div>
+            
+            <div class="grapharea">
+                <div class="graphbg">
+                    <img src="images/page5/page5-graphbg.png" width="590" height="431">
+                        <div id="r4l4"><img src="images/page5/page5-graphbars.png"></div>
+                        <div id="r4s4"><img src="images/page5/page5-DOTS.png"></div>
+                        <div id="r4l4_show" ></div>
+            
+                </div>
+            </div>
+            
+            <div class="subheading">Amado RG. 2008. <sup>13</sup></div>
+            <div class="whiteareapage3-3">
+                        <img src="images/page6_peel.png" width="573" height="113" />
+                        <img src="images/blank.gif" width="573" height="113" />
+            </div>
+            
+            
+            <div class="subheading3">b  Bij patiënten met wild-type KRAS mCRC na falen van fluoropyrimidine, oxaliplatin- en irinotecan- bevattende chemotherapieregimes <sup>9</sup></div>
+            
+                                                            
+                                                            
+                              </div>
+                                              </div>                                                                                                        
+            <div class="slide p6" data-monitoring-id="valcyte_logo" data-monitoring-name="Valcyte">
+                                                        <div class="basic">
+            <div class="page6face"></div>
+            <div class="amgenleft"></div>
+            <div class="vectibixleft"></div>  
+            <div class="r"><a href="#" data-reveal-id="myModalr5">R</a></div>
+            <div class="ra"><a href="#" data-reveal-id="myModal5">*</a></div>
+            <div id="myModal5" class="reveal-modal">
+            <ul>
+            <li>a.	Geselecteerde data uit beschikbare fase 3 studies naar tweede- <br>&nbsp;&nbsp;&nbsp;&nbsp;en derdelijnsschema’s met chemotherapie bij mCRC<sup>4-8</sup></li>
+            <li>b.	Bij patiënten met KRAS wild-type mCRC na falen van <br>&nbsp;&nbsp;&nbsp;&nbsp;fluoropyrimidine, oxaliplatin- en irinotecan- bevattende <br>&nbsp;&nbsp;&nbsp;&nbsp;chemotherapieregimes<sup>9</sup></li>
+            <li>c.	Kaplan-Meier curve van progressievrije overleving bij Vectibix<sup>&reg;</sup> <br>&nbsp;&nbsp;&nbsp;&nbsp;patiënten met wild-type KRAS mCRC (n=124), die een objectieve <br>&nbsp;&nbsp;&nbsp;&nbsp;respons of stabiele ziekte toonden, versus patiënten met <br>&nbsp;&nbsp;&nbsp;&nbsp;ziekteprogressie als beste respons<sup>10,11</sup></li>
+            <li>d.	Patiënten met wild-type KRAS mCRC, behandeld met Vectibix<sup>&reg;</sup> <br>&nbsp;&nbsp;&nbsp;&nbsp;laten een significante verlichting van symptomen zien t.o.v. <br>&nbsp;&nbsp;&nbsp;&nbsp;patiënten met wildtype KRAS mCRC behandeld met BSC alleen.<sup>13</sup> <br>&nbsp;&nbsp;&nbsp;&nbsp;Gemeten met vragenlijst FACT/NCCN CRC symptom index – FSCI</li>
+            <li>e.	Raadpleeg voor informatie over bijwerkingen de samenvatting <br>&nbsp;&nbsp;&nbsp;&nbsp;van productkenmerken<sup>9</sup></li>
+            </ul>
+            <a class="close-reveal-modal">&#215;</a>
+            </div>
+            
+            <div id="myModalr5" class="reveal-modal2">
+            
+            <ol>
+<li ontouchstart="openPDF('pdf/1.pdf');">Amado RG, Wolf M, Peeters M, et al. Wild-Type KRAS is required for panitumumab efficacy in patients with metastatic colorectal cancer. J Clin Oncol. 2008;26:1626-1634</li>
+<li ontouchstart="openPDF('pdf/2.pdf');">Benvenuti S, Sartore-Bianchi A, Di Nicolantonio F, et al. Oncogenic activation of the RAS/RAF signaling pathway impairs the response of metastatic colorectal cancers to anti-epidermal <br>&nbsp;&nbsp;&nbsp;&nbsp;growth factor receptor antibody therapies. Cancer Res. 2007;67:2643-2648</li>
+<li ontouchstart="openPDF('pdf/3.pdf');">Van Krieken JH, Jung A, Kirchner T, et al. KRAS mutation testing for predicting response to anti-EGFR therapy for colorectal carcinoma: proposal for an European quality assurance program.<br>&nbsp;&nbsp;&nbsp;&nbsp;Virchows Arch. 2008;453(5):417-431
+<li ontouchstart="openPDF('pdf/4.pdf');">Tournigand C, André T, Achille E, et al. FOLFIRI followed by FOLFOX6 or the reverse sequence in advanced colorectal cancer: a randomized GERCOR study. J Clin Oncol. 2004;22:229-237</li>
+<li ontouchstart="openPDF('pdf/5.pdf');">Giantonio BJ, Catalano PJ, Meropol NJ, et al. Bevacizumab in combination with oxaliplatin, fluorouracil, and leucovorin (FOLFOX4) for previously treated metastatic colorectal cancer: results <br>&nbsp;&nbsp;&nbsp;&nbsp;from the Eastern cooperative Oncology Group study E3200. J Clin Oncol. 2007;25:1539-1544</li>
+<li ontouchstart="openPDF('pdf/6.pdf');">Sobrero AF, Maurel J, Fehrenbacher L, et al. EPIC: phase III trial of cetuximab plus irinotecan after fluoropyrimidine and oxaliplatin failure in patients with metastatic colorectal cancer. <br>&nbsp;&nbsp;&nbsp;&nbsp;J Clin Oncol. 2008;26:2311-2319</li>
+<li ontouchstart="openPDF('pdf/7.pdf');">Koopman M, Antonini NF, Douma J, et al. Sequential versus combination chemotherapy with capecitabine, irinotecan, and oxaliplatin in advanced colorectal cancer (CAIRO): a phase III <br>&nbsp;&nbsp;&nbsp;&nbsp;randomised controlled trial. Lancet. 2007;370:135-142</li>
+<li ontouchstart="openPDF('pdf/8.pdf');">Chen HX, Mooney M, Boron M, et al. Phase II multicenter trial of bevacizumab plus fluorouracil and leucovorin in patients with advanced refractory colorectal cancer: an NCI treatment <br>&nbsp;&nbsp;&nbsp;&nbsp;referral center trial TRC-0301. J Clin Oncol. 2006;24:3354-3360</li>
+<li ontouchstart="openPDF('pdf/9.pdf');">SmPC Vectibix®. April 2010. Amgen</li>
+<li ontouchstart="openPDF('pdf/10.pdf');">Weber J, McCormack PL. Panitumumab in metastatic colorectal cancer with wild-type KRAS. Biodrugs. 2008;22(6):403-411</li>
+<li ontouchstart="openPDF('pdf/11.pdf');">Siena S, Sartore-Bianchi A, Di Nicolantonio F, et al. Biomarkers predicting clinical outcome of epidermal growth factor receptor-targeted therapy in metastatic colorectal cancer. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;J Natl Cancer Inst. 2009;101:1-17</li>
+<li ontouchstart="openPDF('pdf/12.pdf');">Odom D, Barber B, Bennett L, et al. Health-related quality of life and colorectal cancer-specific symptoms in patients with chemotherapy-refractory metastatic disease treated with <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;panitumumab. Int J Colorectal Dis. 2011;26:173-181</li>
+<li ontouchstart="openPDF('pdf/13.pdf');">Amado RG, Wolf M, Freeman D, et al. Panitumumab efficacy and patient-reported outcomes in metastatic colorectal cancer patients with wild-type KRAS tumor status. Poster presented at <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ASCO-GI in Orlando. Januari 25-27, 2008:Abstract 278</li>
+<li ontouchstart="openPDF('pdf/14.pdf');">FSCI Symptom Index. http://www.facit.org/FACITOrg/Questionnaires. Accessed on : 17 mei 2011</li>
+<li ontouchstart="openPDF('pdf/15.pdf');">CieBOM. Eén herzien advies en één nieuw advies: Panitumumab- en cetuximab- monotherapie in de derde lijn bij de behandeling van het chemotherapierefractair gemetastaseerd <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;colorectaalcarcinoom. Med oncol. 2008;6:52-55</li>
+<li ontouchstart="openPDF('pdf/16.pdf');">NZa. Beleidregel CI-1067, dure geneesmiddelen. September 2008</li>
+<li ontouchstart="openPDF('pdf/17.pdf');">Hecht JR, Peeters M, Van Cutsem E, et al. Safety and tolerability of panitumumab, a fully human monoclonal antibody (MAb), in patients (pts) with metastatic colorectal cancer (mCRC). <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Presented at ESMO in Instanbul. September 29-oktober 2, 2006: Abstract 361P </li>
+<li ontouchstart="openPDF('pdf/18.pdf');">Lacouture ME, Mitchell EP, Piperdi B, et al. Skin toxicity evaluation protocol with panitumumab (STEPP), a phase II, open-label, randomized trial evaluating the impact of a pre-emptive <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;skin treatment regimen on skin toxicities and quality of life in patients with metastatic colorectal cancer. J Clin Oncol. 2010;28:1351-1357</li>
+<li>Farminform BV, data on file. Accessed on: 17 mei 2011</li>       
+            </ol>
+            <a class="close-reveal-modal">&#215;</a>
+            </div>
+            
+            
+            <div class="page2heading">U gunt uw patiënt zoveel <br>
+            mogelijk tijd thuis...</div>
+            
+            <div class="whiteareapage4-1">
+                        <img src="images/page6_peel2.png" width="573" height="113" />
+                        <img src="images/blank.gif" width="573" height="113" />
+            </div>
+            
+            
+            <div class="page6imagearea">
+                <img src="images/blank.gif" width="590" height="431">
+                <img src="images/pag6-pic.png" width="590" height="431" alt="toediening">
+            </div>
+            
+                                                            
+                                                            
+                              </div>
+                                              </div>
+            <div class="slide p7" data-monitoring-id="valcyte_logo" data-monitoring-name="Valcyte">
+                                                        <div class="basic">
+            <div class="page7face"></div>
+            <div class="amgenright"></div>
+            <div class="vectibix"></div>  
+            <div class="r2"><a href="#" data-reveal-id="myModalr6">R</a></div>
+            <div class="ra2"><a href="#" data-reveal-id="myModal6">*</a></div>
+            <div id="myModal6" class="reveal-modal">
+            <ul>
+            <li>a.	Geselecteerde data uit beschikbare fase 3 studies naar tweede- <br>&nbsp;&nbsp;&nbsp;&nbsp;en derdelijnsschema’s met chemotherapie bij mCRC<sup>4-8</sup></li>
+            <li>b.	Bij patiënten met KRAS wild-type mCRC na falen van <br>&nbsp;&nbsp;&nbsp;&nbsp;fluoropyrimidine, oxaliplatin- en irinotecan- bevattende <br>&nbsp;&nbsp;&nbsp;&nbsp;chemotherapieregimes<sup>9</sup></li>
+            <li>c.	Kaplan-Meier curve van progressievrije overleving bij Vectibix<sup>&reg;</sup> <br>&nbsp;&nbsp;&nbsp;&nbsp;patiënten met wild-type KRAS mCRC (n=124), die een objectieve <br>&nbsp;&nbsp;&nbsp;&nbsp;respons of stabiele ziekte toonden, versus patiënten met <br>&nbsp;&nbsp;&nbsp;&nbsp;ziekteprogressie als beste respons<sup>10,11</sup></li>
+            <li>d.	Patiënten met wild-type KRAS mCRC, behandeld met Vectibix<sup>&reg;</sup> <br>&nbsp;&nbsp;&nbsp;&nbsp;laten een significante verlichting van symptomen zien t.o.v. <br>&nbsp;&nbsp;&nbsp;&nbsp;patiënten met wildtype KRAS mCRC behandeld met BSC alleen.<sup>13</sup> <br>&nbsp;&nbsp;&nbsp;&nbsp;Gemeten met vragenlijst FACT/NCCN CRC symptom index – FSCI</li>
+            <li>e.	Raadpleeg voor informatie over bijwerkingen de samenvatting <br>&nbsp;&nbsp;&nbsp;&nbsp;van productkenmerken<sup>9</sup></li>
+            </ul>
+            <a class="close-reveal-modal">&#215;</a>
+            </div>
+            
+            <div id="myModalr6" class="reveal-modal2">
+            
+            <ol>
+<li ontouchstart="openPDF('pdf/1.pdf');">Amado RG, Wolf M, Peeters M, et al. Wild-Type KRAS is required for panitumumab efficacy in patients with metastatic colorectal cancer. J Clin Oncol. 2008;26:1626-1634</li>
+<li ontouchstart="openPDF('pdf/2.pdf');">Benvenuti S, Sartore-Bianchi A, Di Nicolantonio F, et al. Oncogenic activation of the RAS/RAF signaling pathway impairs the response of metastatic colorectal cancers to anti-epidermal <br>&nbsp;&nbsp;&nbsp;&nbsp;growth factor receptor antibody therapies. Cancer Res. 2007;67:2643-2648</li>
+<li ontouchstart="openPDF('pdf/3.pdf');">Van Krieken JH, Jung A, Kirchner T, et al. KRAS mutation testing for predicting response to anti-EGFR therapy for colorectal carcinoma: proposal for an European quality assurance program.<br>&nbsp;&nbsp;&nbsp;&nbsp;Virchows Arch. 2008;453(5):417-431
+<li ontouchstart="openPDF('pdf/4.pdf');">Tournigand C, André T, Achille E, et al. FOLFIRI followed by FOLFOX6 or the reverse sequence in advanced colorectal cancer: a randomized GERCOR study. J Clin Oncol. 2004;22:229-237</li>
+<li ontouchstart="openPDF('pdf/5.pdf');">Giantonio BJ, Catalano PJ, Meropol NJ, et al. Bevacizumab in combination with oxaliplatin, fluorouracil, and leucovorin (FOLFOX4) for previously treated metastatic colorectal cancer: results <br>&nbsp;&nbsp;&nbsp;&nbsp;from the Eastern cooperative Oncology Group study E3200. J Clin Oncol. 2007;25:1539-1544</li>
+<li ontouchstart="openPDF('pdf/6.pdf');">Sobrero AF, Maurel J, Fehrenbacher L, et al. EPIC: phase III trial of cetuximab plus irinotecan after fluoropyrimidine and oxaliplatin failure in patients with metastatic colorectal cancer. <br>&nbsp;&nbsp;&nbsp;&nbsp;J Clin Oncol. 2008;26:2311-2319</li>
+<li ontouchstart="openPDF('pdf/7.pdf');">Koopman M, Antonini NF, Douma J, et al. Sequential versus combination chemotherapy with capecitabine, irinotecan, and oxaliplatin in advanced colorectal cancer (CAIRO): a phase III <br>&nbsp;&nbsp;&nbsp;&nbsp;randomised controlled trial. Lancet. 2007;370:135-142</li>
+<li ontouchstart="openPDF('pdf/8.pdf');">Chen HX, Mooney M, Boron M, et al. Phase II multicenter trial of bevacizumab plus fluorouracil and leucovorin in patients with advanced refractory colorectal cancer: an NCI treatment <br>&nbsp;&nbsp;&nbsp;&nbsp;referral center trial TRC-0301. J Clin Oncol. 2006;24:3354-3360</li>
+<li ontouchstart="openPDF('pdf/9.pdf');">SmPC Vectibix®. April 2010. Amgen</li>
+<li ontouchstart="openPDF('pdf/10.pdf');">Weber J, McCormack PL. Panitumumab in metastatic colorectal cancer with wild-type KRAS. Biodrugs. 2008;22(6):403-411</li>
+<li ontouchstart="openPDF('pdf/11.pdf');">Siena S, Sartore-Bianchi A, Di Nicolantonio F, et al. Biomarkers predicting clinical outcome of epidermal growth factor receptor-targeted therapy in metastatic colorectal cancer. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;J Natl Cancer Inst. 2009;101:1-17</li>
+<li ontouchstart="openPDF('pdf/12.pdf');">Odom D, Barber B, Bennett L, et al. Health-related quality of life and colorectal cancer-specific symptoms in patients with chemotherapy-refractory metastatic disease treated with <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;panitumumab. Int J Colorectal Dis. 2011;26:173-181</li>
+<li ontouchstart="openPDF('pdf/13.pdf');">Amado RG, Wolf M, Freeman D, et al. Panitumumab efficacy and patient-reported outcomes in metastatic colorectal cancer patients with wild-type KRAS tumor status. Poster presented at <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ASCO-GI in Orlando. Januari 25-27, 2008:Abstract 278</li>
+<li ontouchstart="openPDF('pdf/14.pdf');">FSCI Symptom Index. http://www.facit.org/FACITOrg/Questionnaires. Accessed on : 17 mei 2011</li>
+<li ontouchstart="openPDF('pdf/15.pdf');">CieBOM. Eén herzien advies en één nieuw advies: Panitumumab- en cetuximab- monotherapie in de derde lijn bij de behandeling van het chemotherapierefractair gemetastaseerd <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;colorectaalcarcinoom. Med oncol. 2008;6:52-55</li>
+<li ontouchstart="openPDF('pdf/16.pdf');">NZa. Beleidregel CI-1067, dure geneesmiddelen. September 2008</li>
+<li ontouchstart="openPDF('pdf/17.pdf');">Hecht JR, Peeters M, Van Cutsem E, et al. Safety and tolerability of panitumumab, a fully human monoclonal antibody (MAb), in patients (pts) with metastatic colorectal cancer (mCRC). <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Presented at ESMO in Instanbul. September 29-oktober 2, 2006: Abstract 361P </li>
+<li ontouchstart="openPDF('pdf/18.pdf');">Lacouture ME, Mitchell EP, Piperdi B, et al. Skin toxicity evaluation protocol with panitumumab (STEPP), a phase II, open-label, randomized trial evaluating the impact of a pre-emptive <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;skin treatment regimen on skin toxicities and quality of life in patients with metastatic colorectal cancer. J Clin Oncol. 2010;28:1351-1357</li>
+<li>Farminform BV, data on file. Accessed on: 17 mei 2011</li>       
+            </ol>
+            <a class="close-reveal-modal">&#215;</a>
+            </div>
+            
+            
+            <div class="page2heading">U bent niet de enige<br> die Vectibix<sup>&reg;</sup> waardeert...</div>
+            
+            <div class="whiteareapage4-2">
+                        <img src="images/page6_peel2.png" width="573" height="113" />
+                        <img src="images/blank.gif" width="573" height="113" />
+            </div>
+            
+            
+            
+            <div class="page7imagearea">
+                <img src="images/blank.gif" width="590" height="431">
+                <img src="images/medicinepg7.png" width="590" height="431" alt="toediening">
+              </div>
+            
+                                                            
+                                                            
+                              </div>
+                                              </div>   
+                                              
+            <div class="slide p8" data-monitoring-id="valcyte_logo" data-monitoring-name="Valcyte">
+                                                        <div class="basic">
+            <div class="page8face"></div>
+            <div class="amgenleft"></div>
+            <div class="vectibixleft"></div>  
+            <div class="r"><a href="#" data-reveal-id="myModalr7">R</a></div>
+            <div class="ra"><a href="#" data-reveal-id="myModal7">*</a></div>
+            <div id="myModal7" class="reveal-modal">
+            <ul>
+            <li>a.	Geselecteerde data uit beschikbare fase 3 studies naar tweede- <br>&nbsp;&nbsp;&nbsp;&nbsp;en derdelijnsschema’s met chemotherapie bij mCRC<sup>4-8</sup></li>
+            <li>b.	Bij patiënten met KRAS wild-type mCRC na falen van <br>&nbsp;&nbsp;&nbsp;&nbsp;fluoropyrimidine, oxaliplatin- en irinotecan- bevattende <br>&nbsp;&nbsp;&nbsp;&nbsp;chemotherapieregimes<sup>9</sup></li>
+            <li>c.	Kaplan-Meier curve van progressievrije overleving bij Vectibix<sup>&reg;</sup> <br>&nbsp;&nbsp;&nbsp;&nbsp;patiënten met wild-type KRAS mCRC (n=124), die een objectieve <br>&nbsp;&nbsp;&nbsp;&nbsp;respons of stabiele ziekte toonden, versus patiënten met <br>&nbsp;&nbsp;&nbsp;&nbsp;ziekteprogressie als beste respons<sup>10,11</sup></li>
+            <li>d.	Patiënten met wild-type KRAS mCRC, behandeld met Vectibix<sup>&reg;</sup> <br>&nbsp;&nbsp;&nbsp;&nbsp;laten een significante verlichting van symptomen zien t.o.v. <br>&nbsp;&nbsp;&nbsp;&nbsp;patiënten met wildtype KRAS mCRC behandeld met BSC alleen.<sup>13</sup> <br>&nbsp;&nbsp;&nbsp;&nbsp;Gemeten met vragenlijst FACT/NCCN CRC symptom index – FSCI</li>
+            <li>e.	Raadpleeg voor informatie over bijwerkingen de samenvatting <br>&nbsp;&nbsp;&nbsp;&nbsp;van productkenmerken<sup>9</sup></li>
+            </ul>
+            <a class="close-reveal-modal">&#215;</a>
+            </div>
+            
+            <div id="myModalr7" class="reveal-modal2">
+            
+            <ol>
+<li ontouchstart="openPDF('pdf/1.pdf');">Amado RG, Wolf M, Peeters M, et al. Wild-Type KRAS is required for panitumumab efficacy in patients with metastatic colorectal cancer. J Clin Oncol. 2008;26:1626-1634</li>
+<li ontouchstart="openPDF('pdf/2.pdf');">Benvenuti S, Sartore-Bianchi A, Di Nicolantonio F, et al. Oncogenic activation of the RAS/RAF signaling pathway impairs the response of metastatic colorectal cancers to anti-epidermal <br>&nbsp;&nbsp;&nbsp;&nbsp;growth factor receptor antibody therapies. Cancer Res. 2007;67:2643-2648</li>
+<li ontouchstart="openPDF('pdf/3.pdf');">Van Krieken JH, Jung A, Kirchner T, et al. KRAS mutation testing for predicting response to anti-EGFR therapy for colorectal carcinoma: proposal for an European quality assurance program.<br>&nbsp;&nbsp;&nbsp;&nbsp;Virchows Arch. 2008;453(5):417-431
+<li ontouchstart="openPDF('pdf/4.pdf');">Tournigand C, André T, Achille E, et al. FOLFIRI followed by FOLFOX6 or the reverse sequence in advanced colorectal cancer: a randomized GERCOR study. J Clin Oncol. 2004;22:229-237</li>
+<li ontouchstart="openPDF('pdf/5.pdf');">Giantonio BJ, Catalano PJ, Meropol NJ, et al. Bevacizumab in combination with oxaliplatin, fluorouracil, and leucovorin (FOLFOX4) for previously treated metastatic colorectal cancer: results <br>&nbsp;&nbsp;&nbsp;&nbsp;from the Eastern cooperative Oncology Group study E3200. J Clin Oncol. 2007;25:1539-1544</li>
+<li ontouchstart="openPDF('pdf/6.pdf');">Sobrero AF, Maurel J, Fehrenbacher L, et al. EPIC: phase III trial of cetuximab plus irinotecan after fluoropyrimidine and oxaliplatin failure in patients with metastatic colorectal cancer. <br>&nbsp;&nbsp;&nbsp;&nbsp;J Clin Oncol. 2008;26:2311-2319</li>
+<li ontouchstart="openPDF('pdf/7.pdf');">Koopman M, Antonini NF, Douma J, et al. Sequential versus combination chemotherapy with capecitabine, irinotecan, and oxaliplatin in advanced colorectal cancer (CAIRO): a phase III <br>&nbsp;&nbsp;&nbsp;&nbsp;randomised controlled trial. Lancet. 2007;370:135-142</li>
+<li ontouchstart="openPDF('pdf/8.pdf');">Chen HX, Mooney M, Boron M, et al. Phase II multicenter trial of bevacizumab plus fluorouracil and leucovorin in patients with advanced refractory colorectal cancer: an NCI treatment <br>&nbsp;&nbsp;&nbsp;&nbsp;referral center trial TRC-0301. J Clin Oncol. 2006;24:3354-3360</li>
+<li ontouchstart="openPDF('pdf/9.pdf');">SmPC Vectibix®. April 2010. Amgen</li>
+<li ontouchstart="openPDF('pdf/10.pdf');">Weber J, McCormack PL. Panitumumab in metastatic colorectal cancer with wild-type KRAS. Biodrugs. 2008;22(6):403-411</li>
+<li ontouchstart="openPDF('pdf/11.pdf');">Siena S, Sartore-Bianchi A, Di Nicolantonio F, et al. Biomarkers predicting clinical outcome of epidermal growth factor receptor-targeted therapy in metastatic colorectal cancer. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;J Natl Cancer Inst. 2009;101:1-17</li>
+<li ontouchstart="openPDF('pdf/12.pdf');">Odom D, Barber B, Bennett L, et al. Health-related quality of life and colorectal cancer-specific symptoms in patients with chemotherapy-refractory metastatic disease treated with <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;panitumumab. Int J Colorectal Dis. 2011;26:173-181</li>
+<li ontouchstart="openPDF('pdf/13.pdf');">Amado RG, Wolf M, Freeman D, et al. Panitumumab efficacy and patient-reported outcomes in metastatic colorectal cancer patients with wild-type KRAS tumor status. Poster presented at <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ASCO-GI in Orlando. Januari 25-27, 2008:Abstract 278</li>
+<li ontouchstart="openPDF('pdf/14.pdf');">FSCI Symptom Index. http://www.facit.org/FACITOrg/Questionnaires. Accessed on : 17 mei 2011</li>
+<li ontouchstart="openPDF('pdf/15.pdf');">CieBOM. Eén herzien advies en één nieuw advies: Panitumumab- en cetuximab- monotherapie in de derde lijn bij de behandeling van het chemotherapierefractair gemetastaseerd <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;colorectaalcarcinoom. Med oncol. 2008;6:52-55</li>
+<li ontouchstart="openPDF('pdf/16.pdf');">NZa. Beleidregel CI-1067, dure geneesmiddelen. September 2008</li>
+<li ontouchstart="openPDF('pdf/17.pdf');">Hecht JR, Peeters M, Van Cutsem E, et al. Safety and tolerability of panitumumab, a fully human monoclonal antibody (MAb), in patients (pts) with metastatic colorectal cancer (mCRC). <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Presented at ESMO in Instanbul. September 29-oktober 2, 2006: Abstract 361P </li>
+<li ontouchstart="openPDF('pdf/18.pdf');">Lacouture ME, Mitchell EP, Piperdi B, et al. Skin toxicity evaluation protocol with panitumumab (STEPP), a phase II, open-label, randomized trial evaluating the impact of a pre-emptive <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;skin treatment regimen on skin toxicities and quality of life in patients with metastatic colorectal cancer. J Clin Oncol. 2010;28:1351-1357</li>
+<li>Farminform BV, data on file. Accessed on: 17 mei 2011</li>       
+            </ol>
+            <a class="close-reveal-modal">&#215;</a>
+            </div>
+            
+            
+            <div class="page2heading">...ook om het hanteerbaar <br>
+               bijwerkingenpatroon <sup>e, 9,17,18</sup></div>
+            
+            
+            
+            <div class="page8imagearea">
+            <h4>Incidentie van huidgerelateerde bijwerking, diarree en infusiereacties in klinische studies <br>
+            met Vectibix<sup>&reg;</sup> monotherapie (n=920)  <sup>9, 17</sup></h4>
+            <img src="images/page8-tableboxtext.png" width="469" height="187" alt="Table Box">
+            </div>
+            
+            <div class="whiteareapage3-4">
+                        <img src="images/page6_peel3.png" width="573" height="113" />
+                        <img src="images/blank.gif" width="573" height="113" />
+            </div>
+            
+                                                        
+                                                            
+                              </div>
+                                              </div>  
+                                              
+            
+            
+            <div class="slide p9" data-monitoring-id="valcyte_logo" data-monitoring-name="Valcyte">
+                                                        <div class="basic">
+            <div class="page4face"></div>
+            <div class="amgenleft"></div>
+            <div class="vectibixleft"></div>  
+            
+            <div class="reveal-modal2" style="visibility:visible;">
+            
+            <ol>
+<li ontouchstart="openPDF('pdf/1.pdf');">Amado RG, Wolf M, Peeters M, et al. Wild-Type KRAS is required for panitumumab efficacy in patients with metastatic colorectal cancer. J Clin Oncol. 2008;26:1626-1634</li>
+<li ontouchstart="openPDF('pdf/2.pdf');">Benvenuti S, Sartore-Bianchi A, Di Nicolantonio F, et al. Oncogenic activation of the RAS/RAF signaling pathway impairs the response of metastatic colorectal cancers to anti-epidermal <br>&nbsp;&nbsp;&nbsp;&nbsp;growth factor receptor antibody therapies. Cancer Res. 2007;67:2643-2648</li>
+<li ontouchstart="openPDF('pdf/3.pdf');">Van Krieken JH, Jung A, Kirchner T, et al. KRAS mutation testing for predicting response to anti-EGFR therapy for colorectal carcinoma: proposal for an European quality assurance program.<br>&nbsp;&nbsp;&nbsp;&nbsp;Virchows Arch. 2008;453(5):417-431
+<li ontouchstart="openPDF('pdf/4.pdf');">Tournigand C, André T, Achille E, et al. FOLFIRI followed by FOLFOX6 or the reverse sequence in advanced colorectal cancer: a randomized GERCOR study. J Clin Oncol. 2004;22:229-237</li>
+<li ontouchstart="openPDF('pdf/5.pdf');">Giantonio BJ, Catalano PJ, Meropol NJ, et al. Bevacizumab in combination with oxaliplatin, fluorouracil, and leucovorin (FOLFOX4) for previously treated metastatic colorectal cancer: results <br>&nbsp;&nbsp;&nbsp;&nbsp;from the Eastern cooperative Oncology Group study E3200. J Clin Oncol. 2007;25:1539-1544</li>
+<li ontouchstart="openPDF('pdf/6.pdf');">Sobrero AF, Maurel J, Fehrenbacher L, et al. EPIC: phase III trial of cetuximab plus irinotecan after fluoropyrimidine and oxaliplatin failure in patients with metastatic colorectal cancer. <br>&nbsp;&nbsp;&nbsp;&nbsp;J Clin Oncol. 2008;26:2311-2319</li>
+<li ontouchstart="openPDF('pdf/7.pdf');">Koopman M, Antonini NF, Douma J, et al. Sequential versus combination chemotherapy with capecitabine, irinotecan, and oxaliplatin in advanced colorectal cancer (CAIRO): a phase III <br>&nbsp;&nbsp;&nbsp;&nbsp;randomised controlled trial. Lancet. 2007;370:135-142</li>
+<li ontouchstart="openPDF('pdf/8.pdf');">Chen HX, Mooney M, Boron M, et al. Phase II multicenter trial of bevacizumab plus fluorouracil and leucovorin in patients with advanced refractory colorectal cancer: an NCI treatment <br>&nbsp;&nbsp;&nbsp;&nbsp;referral center trial TRC-0301. J Clin Oncol. 2006;24:3354-3360</li>
+<li ontouchstart="openPDF('pdf/9.pdf');">SmPC Vectibix®. April 2010. Amgen</li>
+<li ontouchstart="openPDF('pdf/10.pdf');">Weber J, McCormack PL. Panitumumab in metastatic colorectal cancer with wild-type KRAS. Biodrugs. 2008;22(6):403-411</li>
+<li ontouchstart="openPDF('pdf/11.pdf');">Siena S, Sartore-Bianchi A, Di Nicolantonio F, et al. Biomarkers predicting clinical outcome of epidermal growth factor receptor-targeted therapy in metastatic colorectal cancer. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;J Natl Cancer Inst. 2009;101:1-17</li>
+<li ontouchstart="openPDF('pdf/12.pdf');">Odom D, Barber B, Bennett L, et al. Health-related quality of life and colorectal cancer-specific symptoms in patients with chemotherapy-refractory metastatic disease treated with <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;panitumumab. Int J Colorectal Dis. 2011;26:173-181</li>
+<li ontouchstart="openPDF('pdf/13.pdf');">Amado RG, Wolf M, Freeman D, et al. Panitumumab efficacy and patient-reported outcomes in metastatic colorectal cancer patients with wild-type KRAS tumor status. Poster presented at <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ASCO-GI in Orlando. Januari 25-27, 2008:Abstract 278</li>
+<li ontouchstart="openPDF('pdf/14.pdf');">FSCI Symptom Index. http://www.facit.org/FACITOrg/Questionnaires. Accessed on : 17 mei 2011</li>
+<li ontouchstart="openPDF('pdf/15.pdf');">CieBOM. Eén herzien advies en één nieuw advies: Panitumumab- en cetuximab- monotherapie in de derde lijn bij de behandeling van het chemotherapierefractair gemetastaseerd <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;colorectaalcarcinoom. Med oncol. 2008;6:52-55</li>
+<li ontouchstart="openPDF('pdf/16.pdf');">NZa. Beleidregel CI-1067, dure geneesmiddelen. September 2008</li>
+<li ontouchstart="openPDF('pdf/17.pdf');">Hecht JR, Peeters M, Van Cutsem E, et al. Safety and tolerability of panitumumab, a fully human monoclonal antibody (MAb), in patients (pts) with metastatic colorectal cancer (mCRC). <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Presented at ESMO in Instanbul. September 29-oktober 2, 2006: Abstract 361P </li>
+<li ontouchstart="openPDF('pdf/18.pdf');">Lacouture ME, Mitchell EP, Piperdi B, et al. Skin toxicity evaluation protocol with panitumumab (STEPP), a phase II, open-label, randomized trial evaluating the impact of a pre-emptive <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;skin treatment regimen on skin toxicities and quality of life in patients with metastatic colorectal cancer. J Clin Oncol. 2010;28:1351-1357</li>
+<li>Farminform BV, data on file. Accessed on: 17 mei 2011</li>       
+            </ol>
+            </div>
+            
+            </div>
+            </div>
+            
+            <div class="slide p10" data-monitoring-id="valcyte_logo" data-monitoring-name="Valcyte">
+                                                        <div class="basic">
+            <div class="page5face"></div>
+            <div class="amgenright"></div>
+            <div class="vectibix"></div>  
+            <div class="reveal-modal" style="visibility:visible; padding-top:30px; margin-left:230px; height:450px;">
+            <ul>
+            <li>a.	Geselecteerde data uit beschikbare fase 3 studies naar tweede- <br>&nbsp;&nbsp;&nbsp;&nbsp;en derdelijnsschema’s met chemotherapie bij mCRC<sup>4-8</sup></li>
+            <li>b.	Bij patiënten met KRAS wild-type mCRC na falen van <br>&nbsp;&nbsp;&nbsp;&nbsp;fluoropyrimidine, oxaliplatin- en irinotecan- bevattende <br>&nbsp;&nbsp;&nbsp;&nbsp;chemotherapieregimes<sup>9</sup></li>
+            <li>c.	Kaplan-Meier curve van progressievrije overleving bij Vectibix<sup>&reg;</sup> <br>&nbsp;&nbsp;&nbsp;&nbsp;patiënten met wild-type KRAS mCRC (n=124), die een objectieve <br>&nbsp;&nbsp;&nbsp;&nbsp;respons of stabiele ziekte toonden, versus patiënten met <br>&nbsp;&nbsp;&nbsp;&nbsp;ziekteprogressie als beste respons<sup>10,11</sup></li>
+            <li>d.	Patiënten met wild-type KRAS mCRC, behandeld met Vectibix<sup>&reg;</sup> <br>&nbsp;&nbsp;&nbsp;&nbsp;laten een significante verlichting van symptomen zien t.o.v. <br>&nbsp;&nbsp;&nbsp;&nbsp;patiënten met wildtype KRAS mCRC behandeld met BSC alleen.<sup>13</sup> <br>&nbsp;&nbsp;&nbsp;&nbsp;Gemeten met vragenlijst FACT/NCCN CRC symptom index – FSCI</li>
+            <li>e.	Raadpleeg voor informatie over bijwerkingen de samenvatting <br>&nbsp;&nbsp;&nbsp;&nbsp;van productkenmerken<sup>9</sup></li>
+            </ul>
+            </div>
+            
+            </div>
+            </div>
+                                              
+                                              
+            <div class="slide p1" data-monitoring-id="turkCMV" data-monitoring-name="Türkiye'de CMV Sıklığı">
+                                                    <div class="basic">
+                <h1>Wanneer wilt u weten of de tumor bij uw <br>
+            patiënt met mCRC wild-type KRAS is?</h1>
+            
+            <h2>(Bij ongeveer 60% van de patiënten met mCRC is de tumor wild-type KRAS) 1, 2, 3</h2>
+            
+                   <div id="myslide">
+                        <div class="cover">
+                          <div class="mystuff"><img src="images/head-slider.png" width="127" height="253"></div>
+                        </div> <!-- end of div cover -->
+                    </div>  <!-- end of div myslide -->
+                    <div id="button">
+                       <a class="button1" rel="1" href="#"></a>
+                       <a class="button2" rel="2" href="#"></a>
+                       <a class="button3" rel="3" href="#"></a>
+                       <a class="button4" rel="4" href="#"></a>
+                    </div>
+                    <div class="clear"></div>
+                                    <div id="homepageruler">
+            </div>
+            
+            <div id="homepagetextarea">
+            <p>oxaliplatin <br>
+            + 5-FU bevattende<br>
+            chemotherapie<br>
+            ± bevacizumab</p>
+            
+            <p>irinotecan <br>
+            bevattende<br>
+            chemotherapie</p>
+            
+            <p>Vectibix®  (EGFR inhibitor)</p>
+
+<p class="right">alleen Best<br> 
+Supportive <br>
+Care</p>
+
+</div>
+
+<div id="homepagebottomline">Voorbeeld van een behandelplan</div>
+
+										</div>
+								  </div>                                                                                                 
+                                  								
+								</div>
+						  </div>
+                            
+
+
+
+
+<div class="thumbnailContainer">
+							  <ul class="thumbnails scroller">
+									<li>
+										<a href="#" class="selected" id="link_0">
+											<img src="images/thumbs/1.jpg" alt="" />
+										</a>
+                                    </li>
+									<li>
+										<a href="#" id="link_1">
+											<img src="images/thumbs/2.jpg" alt="" />
+										</a>
+									</li>
+                                    									<li>
+										<a href="#" id="link_2">
+											<img src="images/thumbs/3.jpg" alt="" />
+										</a>
+									</li>
+                                    									<li>
+										<a href="#" id="link_3">
+											<img src="images/thumbs/4.jpg" alt="" />
+										</a>
+									</li>
+                                    									<li>
+										<a href="#" id="link_4">
+											<img src="images/thumbs/5.jpg" alt="" />
+										</a>
+									</li>
+                                    									<li>
+										<a href="#" id="link_5">
+											<img src="images/thumbs/6.jpg" alt="" />
+										</a>
+									</li>
+                                    								
+                                                                    	<li>
+										<a href="#" id="link_6">
+											<img src="images/thumbs/7.jpg" alt="" />
+										</a>
+									</li>
+                                    									<li>
+										<a href="#" id="link_7">
+											<img src="images/thumbs/8.jpg" alt="" />
+										</a>
+									</li>
+                                    		<li>
+										<a href="#" id="link_8">
+											<img src="images/thumbs/9.jpg" alt="" />
+										</a>
+									</li>
+                                    		<li>
+										<a href="#" id="link_9">
+											<img src="images/thumbs/10.jpg" alt="" />
+										</a>
+									</li>
+                                    		<li>
+										<a href="#" id="link_10">
+											<img src="images/thumbs/11.jpg" alt="" />
+										</a>
+									</li>
+                                    
+			  </ul>
+								<div class="rcorner"></div>
+
+							</div>
+
+<p class="flip"></p>
+
+
+						</div>
+					</section>
+
+<section id="etki">
+<div id="etki_anim">
+</div>
+</section>
+
+</article>
+</section>
+</div>
+</div>
+
+<script type="text/javascript">
+		docGallery.attach( '.doc-gallery-trigger' );
+</script>
+
+</body>
+</html>
